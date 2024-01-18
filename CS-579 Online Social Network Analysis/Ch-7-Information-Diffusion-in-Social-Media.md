@@ -6,7 +6,7 @@
 - **Receivers**: receive diffusion information. Commonly the set of receivers are much larger than senders
 - **Medium**: the medium where diffusion takes place
 
-![image-20230405153708968](images\image-20230405153708968.png)
+![image-20230405153708968](images/image-20230405153708968.png)
 
 ## Herd Behavior
 
@@ -50,7 +50,7 @@ In general, **herd behavior**'s network is close to a ==complete graph== where n
 - in a large class, each student comes to the urn, picks a marble, checks its color in private, then writes on a public board what if they think the urn has majority <span style="color:red">red</span> or <span style="color:blue">blue</span> marbles
 - students can see the public guesses made by other students but not what they privately observed
 
-<img src="images\image-20230320143555695.png" alt="image-20230320143555695" style="zoom: 67%;" />
+<img src="images/image-20230320143555695.png" alt="image-20230320143555695" style="zoom: 67%;" />
 
 - regardless of what marbles there are, herding always happens at the 4th level
 
@@ -111,7 +111,7 @@ while A[i] != {}: /* for all */
 return the union of all A
 ```
 
-![image-20230405163307450](images\image-20230405163307450.png)
+![image-20230405163307450](images/image-20230405163307450.png)
 
 - in this example, every edge has a weight $w$ and a *randomly* generated threshold $r$
 - if $w > r$ then activate the neighbor  
@@ -173,7 +173,7 @@ The resulting set $S$ activates at least $1-1/e \approx 63\%$ from the optimal s
 
 Because we don't know much about the network, the best we can do is divide the population into 5 categories:
 
-![image-20230405172956525](images\image-20230405172956525.png)
+![image-20230405172956525](images/image-20230405172956525.png)
 
 ### II. Katz Two-Step Flow Model
 
@@ -241,7 +241,7 @@ $$
 (S + I = N) \rightarrow \frac{dI}{dt} =\Beta I(N-I) \rightarrow I(t) = \frac{NI_0e^{\Beta IN}}{N+I_0(e^{\Beta tN}-1)}
 $$
 
-![image-20230410152635149](images\image-20230410152635149.png)
+![image-20230410152635149](images/image-20230410152635149.png)
 
 - SI model has a ==logistic growth function== compared to the HIV/AIDS growth in the United States
 

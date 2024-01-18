@@ -15,7 +15,7 @@
 
 ### Overlapping vs. Disjoint Communities
 
-<img src="images\image-20230228145043377.png" alt="image-20230228145043377" style="zoom:80%;" />
+<img src="images/image-20230228145043377.png" alt="image-20230228145043377" style="zoom:80%;" />
 
 ### What is Community Analysis?
 
@@ -104,9 +104,9 @@ $$
 
 **Example**
 
-![image-20230228160905630](images\image-20230228160905630.png)
+![image-20230228160905630](images/image-20230228160905630.png)
 
-![image-20230228161916979](images\image-20230228161916979.png)
+![image-20230228161916979](images/image-20230228161916979.png)
 
 ###### 3. Using Cliques as a Seed of a Community
 
@@ -117,7 +117,7 @@ $$
 
 **Input** is a parameter $k$ and a network
 
-![image-20230228162605867](images\image-20230228162605867.png)
+![image-20230228162605867](images/image-20230228162605867.png)
 
 1. find all the cliques of size 3
 2. make a CPM clique graph by treating the cliques as nodes
@@ -137,7 +137,7 @@ $$
 3. **k-clan**: a *k-clique* where all shortest paths within the subgraph: the distance is $\le k$
    - all *k-clans* are *k-cliques* but not vice versa
 
-![image-20230301002639416](images\image-20230301002639416.png)
+![image-20230301002639416](images/image-20230301002639416.png)
 
 ##### C. Node Similarity
 
@@ -150,7 +150,7 @@ can be defined
 
 two nodes are structurally equivalent if they are connecting to the same set of actors 
 
-![image-20230301003152610](images\image-20230301003152610.png)
+![image-20230301003152610](images/image-20230301003152610.png)
 
 - nodes 1 and 3 are structurally equivalent
 - so are 5 and 6
@@ -167,7 +167,7 @@ $$
 = \frac{|N(v_i) \cap N(v_j) |}{\sqrt{|N(v_i)|| N(v_j) |}}
 $$
 
-![image-20230301003439559](images\image-20230301003439559.png)
+![image-20230301003439559](images/image-20230301003439559.png)
 
 <hr>
 
@@ -192,7 +192,7 @@ Community detect can be through of as *graph clustering*
   - the *size* of the cut is the number of edges that are being cut
 - **Minimum Cut** (*min-cut*) **Problem**: find a graph partition such that the number of edges between two sets is minimized
 
-![image-20230301004921998](images\image-20230301004921998.png)
+![image-20230301004921998](images/image-20230301004921998.png)
 
 - min-cut often returns an imbalanced partition with one set being a singleton
 
@@ -214,7 +214,7 @@ $$
 
 **Example**
 
-![image-20230301005835915](images\image-20230301005835915.png)
+![image-20230301005835915](images/image-20230301005835915.png)
 
 For Cut A:
 $$

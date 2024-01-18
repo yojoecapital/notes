@@ -49,7 +49,7 @@ $$
 
 ###### Examples 
 
-![image-20230301103534996](images\image-20230301103534996.png)
+![image-20230301103534996](images/image-20230301103534996.png)
 
 #### Katz Centrality
 
@@ -76,7 +76,7 @@ $$
 
 ###### Examples
 
-![image-20230301104250613](images\image-20230301104250613.png)
+![image-20230301104250613](images/image-20230301104250613.png)
 
 #### PageRank
 
@@ -133,7 +133,7 @@ $$
 
 ###### Examples
 
-![image-20230206142402534](images\image-20230206142402534.png)
+![image-20230206142402534](images/image-20230206142402534.png)
 
 #### Closeness Centrality
 
@@ -148,9 +148,9 @@ $$
 
 ###### Examples
 
-![image-20230206144925646](images\image-20230206144925646.png)
+![image-20230206144925646](images/image-20230206144925646.png)
 
-![image-20230206145202990](images\image-20230206145202990.png)
+![image-20230206145202990](images/image-20230206145202990.png)
 
 ## Group Centrality
 
@@ -162,7 +162,7 @@ $$
 
 Consider $S=\{v_2, v_3\}$
 
-![image-20230206150221249](images\image-20230206150221249.png)
+![image-20230206150221249](images/image-20230206150221249.png)
 
 ## Friendship Patterns
 
@@ -207,7 +207,7 @@ $$
 
 ###### Examples
 
-![image-20230222175534170](images\image-20230222175534170.png)
+![image-20230222175534170](images/image-20230222175534170.png)
 $$
 C = \frac{(\text{Number of triangles}\times3)}{\text{Number of connected triples of nodes}}\\
 = \frac{2}{2 \times 3 + 2} = 0.75
@@ -239,7 +239,7 @@ $$
 
 ###### Examples
 
-![image-20230222180523649](images\image-20230222180523649.png)
+![image-20230222180523649](images/image-20230222180523649.png)
 
 - where the thin lines are connections *to* neighbors
 - solid lines are connected neighbors
@@ -273,7 +273,7 @@ $$
 
 ###### Examples
 
-![image-20230222181756551](images\image-20230222181756551.png)
+![image-20230222181756551](images/image-20230222181756551.png)
 
 Reciprocal nodes are $v_1,v_2$
 $$
@@ -306,7 +306,7 @@ Triangle of nodes $i,j,k$ is balanced if and only if
 $$
 w_{i,j}*w_{j,k}*w_{k,j} \ge 0
 $$
-![image-20230222183240480](images\image-20230222183240480.png)
+![image-20230222183240480](images/image-20230222183240480.png)
 
 ### Social Status Theory
 
@@ -316,7 +316,7 @@ How consistently individuals are assigning status to their neighbors
 
 > If $X$ has a higher status than $Y$ and $Y$ has a higher status that $Z$ then $X$ should have a higher status than $Z$
 
-![image-20230222184933293](images\image-20230222184933293.png)
+![image-20230222184933293](images/image-20230222184933293.png)
 
 - a directed $+$ edge from $X$ to $Y$ shows $X$ has a higher status that $Y$ and $-$ is opposite
 
@@ -409,7 +409,7 @@ $$
 
 ###### Examples
 
-![image-20230222192941847](images\image-20230222192941847.png)
+![image-20230222192941847](images/image-20230222192941847.png)
 
 - any row / column of this matrix shows the similarity to other vertices
 - where vertex 1 is most similar (other than itself) to vertices 2 and 3

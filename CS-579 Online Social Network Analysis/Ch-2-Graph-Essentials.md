@@ -12,7 +12,7 @@
   - directed: $e(v_i, v_j) \neq e(v_j, v_i)$
   - undirected: $e(v_i, v_j) = e(v_j, v_i)$
 
-![Capture](images\Capture.png)
+![Capture](images/Capture.png)
 
 * neighborhood $N(v)$ is the set of nodes that node $v$ is connected to
 
@@ -32,7 +32,7 @@
 
 ### Subgraphs
 
-![Capture (1)](images\Capture (1).png)
+![Capture (1)](images/Capture (1).png)
 
 ### Graph Representation
 
@@ -40,19 +40,19 @@
 
   - can be implemented with 2D array
 
-  ![Capture (2)](images\Capture (2).png)
+  ![Capture (2)](images/Capture (2).png)
 
 - Adjacency List
 
   - can be implemented with dictionary where keys are nodes and values are arrays
 
-  ![Capture (3)](images\Capture (3).png)
+  ![Capture (3)](images/Capture (3).png)
 
 - Edge List
 
   - can be implemented with a list of tuples
 
-  ![Capture (4)](images\Capture (4).png)
+  ![Capture (4)](images/Capture (4).png)
 
 ### Types of Graphs
 

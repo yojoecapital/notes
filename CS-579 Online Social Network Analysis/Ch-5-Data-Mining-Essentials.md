@@ -5,7 +5,7 @@
 
 ### Knowledge Discovery in Databases KDD Process
 
-![Capture (5)](images\Capture (5).png)
+![Capture (5)](images/Capture (5).png)
 
 1. **Selection**: we have a lot of data so we select a relevent subset
 2. **Preprocessing**: raw data maybe noisy or unclean (usually least elegant but most time consuming)
@@ -20,7 +20,7 @@ In the KDD process, data is represented in a tabular format
 * A collection of **features** related to an object or person
 * **Instances** are also called points, data points, or observations
 
-![Capture (6)](images\Capture (6).png)
+![Capture (6)](images/Capture (6).png)
 
 ### Data Types
 
@@ -99,15 +99,15 @@ $$
 
 **TF-IDF Values**
 
-![Capture (8)](images\Capture (8).png)
+![Capture (8)](images/Capture (8).png)
 
 **IDF Values**
 
-![Capture (10)](images\Capture (10).png)
+![Capture (10)](images/Capture (10).png)
 
 **TF-IDF Values**
 
-![Capture (9)](images\Capture (9).png)
+![Capture (9)](images/Capture (9).png)
 
 ### Data Quality
 
@@ -158,9 +158,9 @@ Class attribute *is available*
 * $k$ nearest neighbors are the closest $k$ instances to what is being classified
 * the instance being classified is assigned the label that majority of its $k$ neighbors are assigned
 
-![image-20230126142311156](images\Capture (12).png)
+![image-20230126142311156](images/Capture (12).png)
 
-![image-20230126141601003](images\Capture (11).png)
+![image-20230126141601003](images/Capture (11).png)
 
 * when $k = 5$, predicted label is `triangle`
 * when $k = 9$, predicted label is `square`
@@ -198,7 +198,7 @@ where $A$ is an attribute, $H(S)$ is entropy without splitting node, summation i
 
 ###### IG Example
 
-![image-20230126145329690](images\Capture (13).png)
+![image-20230126145329690](images/Capture (13).png)
 
 Find $IG$ for the attribute outlook $O$ where play golf is the label:
 $$
@@ -213,7 +213,7 @@ IG(H, S) \approx 0.03
 $$
 Thus the attribute $O$ will has highest $IG$ and we select that attribute for our first split:
 
-![image-20230126150544696](images\Capture (14).png)
+![image-20230126150544696](images/Capture (14).png)
 
 *Repeat* this process recursively until until we have all leaf nodes.
 
@@ -229,7 +229,7 @@ $$
 
 ######  Bayes Theorem Example
 
-![image-20230126152017419](images\Capture (15).png)
+![image-20230126152017419](images/Capture (15).png)
 
 Probability of selecting an apple:
 $$
@@ -251,7 +251,7 @@ Use Bayes Theorem $P(Y|X)=\frac{P(X|Y)P(Y)}{P(X)}$ where $X$ is class variable a
 
 ###### NBC Example
 
-![image-20230126155324233](images\image-20230126155324233.png)
+![image-20230126155324233](images/image-20230126155324233.png)
 
 Find the probability distribution of instance 8 for $\bf{P}(PG | i_8)$:
 $$
@@ -301,7 +301,7 @@ Class attribute *is not available*
 
 #### Measuring Distance / Similarity in Clustering
 
-![image-20230130142754781](images\Capture (16).png)
+![image-20230130142754781](images/Capture (16).png)
 
 ##### Cluster Centroids
 
@@ -309,7 +309,7 @@ an abstract notation to represent a cluster (mean or center of cluster)
 
 #### k-Means Clustering
 
-<img src="images\image-20230130143208422.png" alt="image-20230130143208422" style="zoom:33%;" />
+<img src="images/image-20230130143208422.png" alt="image-20230130143208422" style="zoom:33%;" />
 
 ##### k-Means Algorithm:
 
