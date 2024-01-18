@@ -262,9 +262,7 @@ $$
 
  <span style="color:red">finish going over "Ch 6 - Community Analysis I" and "Ch 6 - Community Analysis II"</span>
 
-
-
-As an example, this is python code to calculate NMI from [Homework 3](assignments/CS 579 Homework 3.pdf)
+As an example, this is python code to calculate NMI from Homework 3
 
 - assume circle = 1, cross = 2, triangle = 3
 - the communities are labeled 1, 2, 3 from left to right
