@@ -29,7 +29,7 @@ Find
 
 You can only move tiles into the empty slot. The goal state is where the first slot is empty and the rest increment to 8.
 
-![img](images\Capture.png)
+![img](images/Capture.png)
 
 #### 8 Queens
 
@@ -132,7 +132,7 @@ Try relaxing the problem constraints
 
 **8-Puzzle Example**
 
-![img](images\Capture.png)
+![img](images/Capture.png)
 
 * $h(n):$ number of misplaced tiles
   * how many tiles are misplaced from the goal state (*do not count blank tile*)

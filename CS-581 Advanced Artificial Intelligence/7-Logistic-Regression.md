@@ -138,7 +138,7 @@ $$
 > say we have $x = a + \epsilon$
 > $f(x) = f(a + \epsilon) \approx f(a) + f'(a) * \epsilon$
 
-<img src="images\img-0.png" alt="image-20230323150719666" style="zoom:67%;" />
+<img src="images/img-0.png" alt="image-20230323150719666" style="zoom:67%;" />
 
 1. Start with some initial guess $x_0$
 2. While change is not much $x_{i+1}=x_i + n * \nabla f(x_i)$ where $n$ is called the **learning rate** and is a user specified parameter
@@ -160,15 +160,15 @@ and so on until it converges to 2
 
 > Note that if the learning rate is **too large**, the ascent may diverge and move too far from the optimal
 >
-> <img src="images\image-20230323152515352.png" alt="image-20230323152515352" style="zoom:50%;" />
+> <img src="images/image-20230323152515352.png" alt="image-20230323152515352" style="zoom:50%;" />
 >
 > Also if the learning rate is **too small**, it will take many iterations for the ascent to converge
 >
-> <img src="images\image-20230323152540421.png" alt="image-20230323152540421" style="zoom:50%;" />
+> <img src="images/image-20230323152540421.png" alt="image-20230323152540421" style="zoom:50%;" />
 >
 > The ascent also may converge on a **local optima** depending on the initial guess and learning rate
 >
-> <img src="images\image-20230323153119740.png" alt="image-20230323153119740" style="zoom:50%;" />
+> <img src="images/image-20230323153119740.png" alt="image-20230323153119740" style="zoom:50%;" />
 
 ##### Example of Gradient Ascent to Find $W$
 

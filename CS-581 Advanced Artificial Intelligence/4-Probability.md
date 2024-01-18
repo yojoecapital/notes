@@ -57,7 +57,7 @@ $$
 - $P(V_1, ..., V_2)$ associates a probability for each possible world - *joint distribution*
 - there are $2^n$ entries there the variables are all binary
 
-<img src="images\image-20230209162554577.png" alt="image-20230209162554577" style="zoom:67%;" />
+<img src="images/image-20230209162554577.png" alt="image-20230209162554577" style="zoom:67%;" />
 
 ### Prior and Posterior
 
@@ -178,7 +178,7 @@ $$
 - where $\mu$ is mean and $\sigma ^2$ is variance (notice it is squared)
 - note the exponent is $\frac{(x-\mu)^2}{2 \sigma^2}$
 
-![image-20230214145622781](images\image-20230214145622781.png)
+![image-20230214145622781](images/image-20230214145622781.png)
 
 - note that $p(x)$ can be greater than 1 (but not less than 0) so long as the area equals 1
 

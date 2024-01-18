@@ -30,7 +30,7 @@ A state is placement of 8 queens on the board; the score is the number of pairs 
 
 ## The Search Landscape
 
-![Capture (1)](images\Capture (1).png)
+![Capture (1)](images/Capture (1).png)
 
 ### Hill Climbing
 
@@ -78,7 +78,7 @@ function Simulated-Annealing(problem, schedule):
 - select candidate states from the population
 - combine them to create offspring and optionally mutate them
 
-![image-20230207144728192](images\image-20230207144728192.png)
+![image-20230207144728192](images/image-20230207144728192.png)
 
 * a draw back is that solutions must be able to be represented in a legal string fashion which may be very difficult
 
@@ -130,7 +130,7 @@ function Monte-Carlo-Tree-Search(state):
 	return the move in Actions(state) whose node has the highest number of playouts
 ```
 
-![image-20230209142117003](images\image-20230209142117003.png)
+![image-20230209142117003](images/image-20230209142117003.png)
 
 1. turn the `state` into a `tree` (the purple root node signifies it is currently purple's turn)
 2. select a leaf node from the `tree`, expand it, then select one its children as `child`

@@ -12,7 +12,7 @@
 
 - If we do this for various values of $P(H)$:
 
-![image-20230216162203390](images\image-20230216162203390.png)
+![image-20230216162203390](images/image-20230216162203390.png)
 
 - Thus, $P(H)=0.4$ gives the maximum likelihood that we get that data back
 
@@ -24,7 +24,7 @@
   - $\ln(0.3^4 * 0.7^6)$
   - $4\ln0.3 + 6\ln0.7 \approx -6.956$
 
-![image-20230216163032551](images\image-20230216163032551.png)
+![image-20230216163032551](images/image-20230216163032551.png)
 
 - Again, $P(H)=0.4$ gives the maximum likelihood (or the least negative one)
 
