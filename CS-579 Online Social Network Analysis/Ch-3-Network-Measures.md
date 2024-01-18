@@ -49,7 +49,7 @@ $$
 
 ###### Examples 
 
-![image-20230301103534996](images\image-20230301103534996.png)
+![image-20230301103534996](images/image-20230301103534996.png)
 
 #### Katz Centrality
 
@@ -92,7 +92,8 @@ $$
 * Rewrite and solve
 
 $$
-\bf{C_p} = \beta (\bf{I} - \alpha A^T D^{-1})^{-1} * \bf{1}
+\bf{C_p} = \beta (\bf{I} - \alpha A^T D^{-1})^{-1} * \bf{1}
+
 $$
 
 - where $D=\text{daig}(d^\text{out}_1,d^\text{out}_2,...d^\text{out}_n)$ or a diagonal matrix with the sum of all columns on $A$
