@@ -304,9 +304,11 @@ In a network
 - negative edges denote enemies $w_{i,j}=-1$
 
 Triangle of nodes $i,j,k$ is balanced if and only if
+
 $$
 w_{i,j}*w_{j,k}*w_{k,j} \ge 0
 $$
+
 ![image-20230222183240480](images/image-20230222183240480.png)
 
 ### Social Status Theory
