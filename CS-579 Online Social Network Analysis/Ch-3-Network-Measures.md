@@ -494,7 +494,7 @@ $$
 
 ###### Examples
 
-![image-20230301104250613](images\image-20230301104250613.png)
+![image-20230301104250613](images/image-20230301104250613.png)
 
 #### PageRank
 
@@ -554,7 +554,7 @@ $$
 
 [slide 4-5](https://learn-us-east-1-prod-fleet01-xythos.content.blackboardcdn.com/blackboard.learn.xythos.prod/585304babb2ec/10967264?X-Blackboard-S3-Bucket=blackboard.learn.xythos.prod&X-Blackboard-Expiration=1675728000000&X-Blackboard-Signature=fEZoWCGaX6SvsB9EQwjmYGryRR0Biy1RHuP4UvgHxGQ%3D&X-Blackboard-Client-Id=100773&X-Blackboard-S3-Region=us-east-1&response-cache-control=private%2C%20max-age%3D21600&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27S23-%2520CS%2520579%2520-%2520Ch3%2520-%2520Network%2520Measures%2520II.pdf&response-content-type=application%2Fpdf&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIBuPiiUYThl%2BXONqUc9crtfT3V835KRJjYXkDsUARj1SAiARkd57M6AIZE8ZuVrU18Fh%2BTcAiZiRJivnzLF70LViMCrMBAhMEAAaDDU1NjkwMzg2MTM2MSIMyKFfdQ0Oa1NKi5pdKqkEV7QLFdGG9aqzCBVF3ghDRqBhOo6M%2B11TrItiEhCTEi%2BrTwk6%2Fw0%2Fuz84f1OT7B8PADndSY77ZL4zfk1HYoNJtM%2BRtwATgK%2FVVdvIEp6pdagwkB9%2BDUTV2OtLtOxTZdebwTV9Zr5ybKjo8iEpDyx36YnCQvyHDDQaGmVVlw47BgqoYfwDM2JSkdJp5Ngy3po0y5fjnWXbiKPrDOlMD9UcsPUu5I8U1c7zKb9qtftA6C1CLurSLlLxNJNjWJMxLK0tsFn3JiFKo1Zi0wZ0P1BxQK3laRoK9vLnA9sm%2BJN3RUJE%2BRwT%2BOhBGmKLOLmZF4sVjeFEVKFfDPi2Sb%2FwS7Lk57oeBLXRnYjLHY512sQuYywFDN7HynWKx4%2F3tq7SPDJlQFfHVzLKKm2IIHTKFeC8sfZjVQjYCmPFKTqR20Msa08bWkrwPUPaH7yW48bcUA%2FEF5bTnDnprJvB9A%2BuANyGMPpP1%2BYer6O5ji91gkTyc4EMs45lDesOZJg9X47QhhmQqWvISM1S0KyOmIxcdEAHKcVylxtIiqtx003JgAawN%2FtT2GOhoSb89gDqLjNc4uNCZpbkEYFQUyLG5svNHHteAaE1W60XOh9kzRqEHXU5BaO4sEVbR4uDJtaeOnJB50U04B2P3kYUicxIBuym7yb32THDK343aAxRoBYYT75L3YUtszz1Q0pFWQHfjtKQ7fudljt1N2mmH9y6%2ByOzOub6PKv7%2B%2FecOXfD%2FTD7oYWfBjqqAbjbcfMhpXAGfm%2B8Ptki9Jl4idWtABThtLFqqnlFs8QpFj%2BeeYCzg3HoFy4y6c2t1FH4Oi%2FdmXiGuWSQnO7Q6OC4FQMF4DhqaDUCB1U%2FViSX%2BFf6DTLCn0BqkTu2xkUvk9zgDcqgO1DefJAfzfxWbdkJvEkdQVQCGS3keYcR52XRSTckfCXZWrbZBB2rIeeOzvmKqYsxnsZExr%2BFOwljk0KDFSSeec8YsSQ6&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230206T180000Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=ASIAYDKQORRYSFJSOUWD%2F20230206%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=99bd34748817870c87aba9eb7f50e8b519fc9e46e1b1f93b9c3f8697dc36ad86)
 
-![image-20230206142402534](images\image-20230206142402534.png)
+![image-20230206142402534](images/image-20230206142402534.png)
 
 #### Closeness Centrality
 
@@ -569,9 +569,9 @@ $$
 
 ###### Examples
 
-![image-20230206144925646](images\image-20230206144925646.png)
+![image-20230206144925646](images/image-20230206144925646.png)
 
-![image-20230206145202990](images\image-20230206145202990.png)
+![image-20230206145202990](images/image-20230206145202990.png)
 
 [slide 8-10](https://learn-us-east-1-prod-fleet01-xythos.content.blackboardcdn.com/blackboard.learn.xythos.prod/585304babb2ec/10967264?X-Blackboard-S3-Bucket=blackboard.learn.xythos.prod&X-Blackboard-Expiration=1675728000000&X-Blackboard-Signature=fEZoWCGaX6SvsB9EQwjmYGryRR0Biy1RHuP4UvgHxGQ%3D&X-Blackboard-Client-Id=100773&X-Blackboard-S3-Region=us-east-1&response-cache-control=private%2C%20max-age%3D21600&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27S23-%2520CS%2520579%2520-%2520Ch3%2520-%2520Network%2520Measures%2520II.pdf&response-content-type=application%2Fpdf&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIBuPiiUYThl%2BXONqUc9crtfT3V835KRJjYXkDsUARj1SAiARkd57M6AIZE8ZuVrU18Fh%2BTcAiZiRJivnzLF70LViMCrMBAhMEAAaDDU1NjkwMzg2MTM2MSIMyKFfdQ0Oa1NKi5pdKqkEV7QLFdGG9aqzCBVF3ghDRqBhOo6M%2B11TrItiEhCTEi%2BrTwk6%2Fw0%2Fuz84f1OT7B8PADndSY77ZL4zfk1HYoNJtM%2BRtwATgK%2FVVdvIEp6pdagwkB9%2BDUTV2OtLtOxTZdebwTV9Zr5ybKjo8iEpDyx36YnCQvyHDDQaGmVVlw47BgqoYfwDM2JSkdJp5Ngy3po0y5fjnWXbiKPrDOlMD9UcsPUu5I8U1c7zKb9qtftA6C1CLurSLlLxNJNjWJMxLK0tsFn3JiFKo1Zi0wZ0P1BxQK3laRoK9vLnA9sm%2BJN3RUJE%2BRwT%2BOhBGmKLOLmZF4sVjeFEVKFfDPi2Sb%2FwS7Lk57oeBLXRnYjLHY512sQuYywFDN7HynWKx4%2F3tq7SPDJlQFfHVzLKKm2IIHTKFeC8sfZjVQjYCmPFKTqR20Msa08bWkrwPUPaH7yW48bcUA%2FEF5bTnDnprJvB9A%2BuANyGMPpP1%2BYer6O5ji91gkTyc4EMs45lDesOZJg9X47QhhmQqWvISM1S0KyOmIxcdEAHKcVylxtIiqtx003JgAawN%2FtT2GOhoSb89gDqLjNc4uNCZpbkEYFQUyLG5svNHHteAaE1W60XOh9kzRqEHXU5BaO4sEVbR4uDJtaeOnJB50U04B2P3kYUicxIBuym7yb32THDK343aAxRoBYYT75L3YUtszz1Q0pFWQHfjtKQ7fudljt1N2mmH9y6%2ByOzOub6PKv7%2B%2FecOXfD%2FTD7oYWfBjqqAbjbcfMhpXAGfm%2B8Ptki9Jl4idWtABThtLFqqnlFs8QpFj%2BeeYCzg3HoFy4y6c2t1FH4Oi%2FdmXiGuWSQnO7Q6OC4FQMF4DhqaDUCB1U%2FViSX%2BFf6DTLCn0BqkTu2xkUvk9zgDcqgO1DefJAfzfxWbdkJvEkdQVQCGS3keYcR52XRSTckfCXZWrbZBB2rIeeOzvmKqYsxnsZExr%2BFOwljk0KDFSSeec8YsSQ6&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230206T180000Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=ASIAYDKQORRYSFJSOUWD%2F20230206%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=99bd34748817870c87aba9eb7f50e8b519fc9e46e1b1f93b9c3f8697dc36ad86)
 
@@ -587,7 +587,7 @@ $$
 
 Consider $S=\{v_2, v_3\}$
 
-![image-20230206150221249](images\image-20230206150221249.png)
+![image-20230206150221249](images/image-20230206150221249.png)
 
 ## Friendship Patterns
 
@@ -632,7 +632,7 @@ $$
 
 ###### Examples
 
-![image-20230222175534170](images\image-20230222175534170.png)
+![image-20230222175534170](images/image-20230222175534170.png)
 $$
 C = \frac{(\text{Number of triangles}\times3)}{\text{Number of connected triples of nodes}}\\
 = \frac{2}{2 \times 3 + 2} = 0.75
@@ -664,7 +664,7 @@ $$
 
 ###### Examples
 
-![image-20230222180523649](images\image-20230222180523649.png)
+![image-20230222180523649](images/image-20230222180523649.png)
 
 - where the thin lines are connections *to* neighbors
 - solid lines are connected neighbors
@@ -698,7 +698,7 @@ $$
 
 ###### Examples
 
-![image-20230222181756551](images\image-20230222181756551.png)
+![image-20230222181756551](images/image-20230222181756551.png)
 
 Reciprocal nodes are $v_1,v_2$
 $$
@@ -731,7 +731,7 @@ Triangle of nodes $i,j,k$ is balanced if and only if
 $$
 w_{i,j}*w_{j,k}*w_{k,j} \ge 0
 $$
-![image-20230222183240480](images\image-20230222183240480.png)
+![image-20230222183240480](images/image-20230222183240480.png)
 
 ### Social Status Theory
 
@@ -741,7 +741,7 @@ How consistently individuals are assigning status to their neighbors
 
 > If $X$ has a higher status than $Y$ and $Y$ has a higher status that $Z$ then $X$ should have a higher status than $Z$
 
-![image-20230222184933293](images\image-20230222184933293.png)
+![image-20230222184933293](images/image-20230222184933293.png)
 
 - a directed $+$ edge from $X$ to $Y$ shows $X$ has a higher status that $Y$ and $-$ is opposite
 
@@ -834,7 +834,7 @@ $$
 
 ###### Examples
 
-![image-20230222192941847](images\image-20230222192941847.png)
+![image-20230222192941847](images/image-20230222192941847.png)
 
 - any row / column of this matrix shows the similarity to other vertices
 - where vertex 1 is most similar (other than itself) to vertices 2 and 3
