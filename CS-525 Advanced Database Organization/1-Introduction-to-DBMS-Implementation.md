@@ -1,9 +1,5 @@
 # Introduction to DBMS Implementation
 
-- Wednesday: 5:00 pm - 7:40 pm
-- [Yousef M. Elmehdwi](mailto:yelmehdwi@iit.edu)
-- A starts at 85%
-
 [toc]
 
 ## Core Terminology Review

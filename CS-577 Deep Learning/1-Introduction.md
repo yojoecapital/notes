@@ -1,12 +1,6 @@
 # Introduction
 
-- Wednesday & Friday 1:50 - 3:05 PM
-- [Dr. Yan Yan](mailto:yyan34@iit.edu)
-- TAs handle all homework / python questions
-  - [Weitai Kang](mailto:wkang11@hawk.iit.edu) 
-  - [Junyi Wu](mailto:jwu125@hawk.iit.edu) 
-  - [Gengyu Zhang](mailto:gzhang32@hawk.iit.edu)
--  Textbook: [Deep Learning](https://www.deeplearningbook.org)
+- Textbook: [Deep Learning](https://www.deeplearningbook.org)
 
 [toc]
 

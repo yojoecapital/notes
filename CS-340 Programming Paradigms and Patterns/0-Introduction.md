@@ -2,13 +2,7 @@
 
 ## Administrative
 
-- [Class Website](https://moss.cs.iit.edu/cs340/)
 - [Textbook](http://learnyouahaskell.com/chapters)
-- [Syllabus](https://moss.cs.iit.edu/cs340/syllabus.pdf)
-- Office: SB 226C
-- Hours: Wed & Fri 1-3 PM
-  - Zoom or In-person (appointment only)
-- TA: Nadeem Hussein
 
 #### Grading
 

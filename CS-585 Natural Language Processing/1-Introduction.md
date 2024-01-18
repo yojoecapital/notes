@@ -1,12 +1,5 @@
 # Introduction
 
-- Tuesday & Thursday 8:35 am - 9:50 am
-
-- [Sonjia Waxmonsky](mailto:swaxmonsky@iit.edu), Ph.D.
-- Office hours (Virtual): Friday 9:30 - 10:30 am
-- [Office hours Zoom link](https://iit-edu.zoom.us/j/83567906737?pwd=a1ZGRk9tZWdzRVlmZWJHWHJRaXdudz09)
-- Other office hour times: by appointment only via email
-
 [toc]
 
 # Language, Linguistics, & NLP
