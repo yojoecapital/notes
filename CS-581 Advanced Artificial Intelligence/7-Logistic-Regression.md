@@ -105,11 +105,7 @@ $$
 
 > Notice that the terms $(1 - P(\text{false}|\vec X))$ and $(1 - P(\text{true}|\vec X))$ are both probability of errors
 >
-> $$
-> \frac{\partial\text{CLL}}{\partial w_i} =
-> \sum_\text{false}( -\text{Error}_{false}*x_i) +
-> \sum_\text{true} (\text{Error}_{true}*x_i)\\
-> $$
+> $\frac{\partial\text{CLL}}{\partial w_i} = \sum_\text{false}( -\text{Error}_{false}*x_i) + \sum_\text{true} (\text{Error}_{true}*x_i) $
 > 
 > Also notice that the probability of error for the false case has a negative gradient $(-)$ while the true case has positive $(+)$
 >
