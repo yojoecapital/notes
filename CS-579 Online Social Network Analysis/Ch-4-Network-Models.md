@@ -15,6 +15,7 @@
 > The rich get richer
 
 When the frequency of an event changes a power of an attribute
+
 $$
 P_d = ad^{-b} \\
 \ln{P_d} = -b \ln d + \ln a
@@ -99,6 +100,7 @@ We can also say $p = c/(n-1)$
 > - therefore, on average, $(n-1)p$ edges are selected
 
  Given $G(n,p)$, the probability of observing $m$ edges is the binomial distribution
+ 
 $$
 P(|E|=m) = {{n \choose 2} \choose m}p^m(1-p)^{{n \choose 2} - m}
 $$
@@ -232,9 +234,11 @@ say a new node $v$ arrives to this graph
 ![image-20230223164529416](images/image-20230223164529416.png)
 
 the probability of $v$ connecting to another node $v_i$ is
+
 $$
 P(v_i) = \frac{d_i}{\sum_j d_j}
 $$
+
 so the probabilities $v$ connects to each node is
 
 - $P(1) = 1/7$
