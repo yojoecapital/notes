@@ -110,6 +110,7 @@ $$
 > \sum_\text{false}( -\text{Error}_{false}*x_i) +
 > \sum_\text{true} (\text{Error}_{true}*x_i)\\
 > $$
+> 
 > Also notice that the probability of error for the false case has a negative gradient $(-)$ while the true case has positive $(+)$
 >
 > Finally, $\frac{\partial\text{CLL}}{\partial w_i} = 0$ **has no closed form solution** as it can never equal zero
