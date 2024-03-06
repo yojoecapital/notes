@@ -33,6 +33,7 @@ $$
 ## Learning: Parameter Estimation
 
 We're trying to find the weights $W$ that maximize the *conditional log-likelihood* given some dataset $\mathcal D$
+
 $$
 W \leftarrow \max_W \Pi_{d \in \mathcal D}P(Y[d]|X[d]) \\
 W \leftarrow \max_W \sum_{d \in \mathcal D}\ln P(Y[d]|X[d]) \\
@@ -103,6 +104,7 @@ $$
 ##### CLL Summary
 
 > Notice that the terms $(1 - P(\text{false}|\vec X))$ and $(1 - P(\text{true}|\vec X))$ are both probability of errors
+>
 > $$
 > \frac{\partial\text{CLL}}{\partial w_i} =
 > \sum_\text{false}( -\text{Error}_{false}*x_i) +
