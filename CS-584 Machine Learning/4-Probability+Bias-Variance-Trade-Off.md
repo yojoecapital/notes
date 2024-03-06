@@ -24,8 +24,8 @@
 - $X$ is a random variable
 - $x$ is particular value of $X$ 
 - $\text{Val}(X)$ set of values $X$ can take
-- $\bold X$ is a set of random variables
-- $\bold x$ is an assignment to all variables in $\bold X$
+- $\bf X$ is a set of random variables
+- $\bf x$ is an assignment to all variables in $\bf X$
 - $P(x)$ short hand for $P(X=x)$
 - $P(x,y)$ short hand for $P(X=x \cap Y=y)$
 
@@ -122,7 +122,7 @@ $$
 
 ![image-20230831144708545.png](images/image-20230831144708545.png)
 
-- to show that in this distribution, $X \perp Y$, show that $P(X=x,Y=y)=P(X=x,Y=y)$ for all $x\in \bold X$ and $y \in \bold Y$
+- to show that in this distribution, $X \perp Y$, show that $P(X=x,Y=y)=P(X=x,Y=y)$ for all $x\in \bf X$ and $y \in \bf Y$
 
 $$
 P(X=t,Y=t) \stackrel{!}{=} P(X=t)P(Y=t)\\
@@ -185,7 +185,7 @@ $$
 ### Y continuous, X discrete
 
 - consider $P(Y|X=x)$ where $Y$ is *continuous* but $X$ is *discrete*
-- you will use separate probability density functions for each value of $x \in \bold X$
+- you will use separate probability density functions for each value of $x \in \bf X$
 
 ## Expectation
 
