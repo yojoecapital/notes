@@ -416,7 +416,7 @@ $$
 - any row / column of this matrix shows the similarity to other vertices
 - where vertex 1 is most similar (other than itself) to vertices 2 and 3
 - nodes 2 and 3 have the highest similarity (regular equivalence)
-=======
+******=
 # Network Measures
 
 * **Centrality**: who are the most influential individuals (most important node)
@@ -834,3 +834,4 @@ $$
 - any row / column of this matrix shows the similarity to other vertices
 - where vertex 1 is most similar (other than itself) to vertices 2 and 3
 - nodes 2 and 3 have the highest similarity (regular equivalence)
+

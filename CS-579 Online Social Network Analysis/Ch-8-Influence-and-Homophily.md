@@ -1,23 +1,23 @@
 # Influence and Homophily
 
 - *Special forces* connect individuals in different ways
-- When individuals get connected we observe ==assortativity== or *social similarity*
+- When individuals get connected we observe **assortativity** or *social similarity*
 - Social networks are assortative (high similarity between friends)
 
-==Influence== 
+**Influence** 
 
 - the process by which a user affects another user
 - the influenced user becomes more similar to the influential figure
 
 > Smoker friends influence their non-smoker friends
 
-==Homophily== 
+**Homophily** 
 
 similar individuals become friends due to their high similarity
 
 > Smokers become friends with smokers
 
-==Cofounding==
+**Cofounding**
 
 the environments effect on making individuals similar
 
@@ -34,7 +34,7 @@ the environments effect on making individuals similar
 
 ## Measuring Assortativity
 
-### Measuring Assortativity for ==Nominal== Attributes
+### Measuring Assortativity for **Nominal** Attributes
 
 - Nodes have a [nominal](Ch-5-Data-Mining-Essentials.md#Data-Types) attribute such as race or sex
 - $t(v)$ denotes the type of node $v$
@@ -54,7 +54,7 @@ $$
 Q = \frac{1}{2m}\sum_{ij}A_{ij}\delta(t(v_i),t(v_j)) - \frac{1}{2m}\sum_{ij}\frac{d_id_j}{2m}\delta(t(v_i), t(v_j)) \\
 = \frac{1}{2m}\sum_{ij}(A_{ij}-\frac{d_id_j}{2m})\delta(t(v_i),t(v_j))
 $$
-this is ==modularity==
+this is **modularity**
 
 #### Normalized Modularity Matrix Form
 
@@ -73,9 +73,9 @@ The $\Delta$ matrix's left column indicates a node is light while the right indi
 
 This value shows that the edges between nodes of the same color is less than the expected number of edges between them
 
-### Measuring Assortativity for ==Ordinal== Attributes
+### Measuring Assortativity for **Ordinal** Attributes
 
-- A common measure for analyzing relationship between [ordinal](Ch-5-Data-Mining-Essentials.md#Data-Types) values is ==covariance==
+- A common measure for analyzing relationship between [ordinal](Ch-5-Data-Mining-Essentials.md#Data-Types) values is **covariance**
 - Covariance describes how two variables change together
 - In our case, we have a network; we're interested in how values of nodes that are connected are related 
 
@@ -104,7 +104,7 @@ $$
 
 ###### Pearson Correlation
 
-- ==Normalized Covariance== can be done through *Pearson correlation* $[-1,1]$:
+- **Normalized Covariance** can be done through *Pearson correlation* $[-1,1]$:
 
 $$
 p(X_L,X_R) = \frac{\sigma(X_L,X_R)}{\sigma(X_L)\sigma(X_R)}\\\\
@@ -153,7 +153,7 @@ measuring the amount of influence **attributed** to the individual
 
 #### Comparing Ranks across 3 Measures
 
-to compare ranks across more than one measure (i.e. *in-degree* vs *mentions*) we can use ==Spearman's rank correlation== coefficient $[-1,1]$
+to compare ranks across more than one measure (i.e. *in-degree* vs *mentions*) we can use **Spearman's rank correlation** coefficient $[-1,1]$
 $$
 \rho = 1- \frac{6\sum_i(m_1^i-m_2^i)^2}{n^3-n}
 $$
@@ -176,7 +176,7 @@ $$
 ### Influence Modeling: Assumptions
 
 - The influence process takes place in a network
-- Sometimes this network is observable (==explicit network==) and sometimes not (==implicit network==)
+- Sometimes this network is observable (**explicit network**) and sometimes not (**implicit network**)
 - Explicit (observable) network: we can use threshold models
   - linear threshold model (LTM)
 - Implicit Network: we can use methods that take the number of individuals who get influenced at different times as input
@@ -193,7 +193,7 @@ $$
 - a node $i$ becomes active if incoming influence $w_{j,i}$ from friends exceeds a certain threshold
 - nodes satisfying the following will be activated
 
-<span style="color:red">I  don't understand this equation, but the example makes sense</span>
+<span style="color:red">I don't understand this equation, but the example makes sense</span>
 $$
 \sum_{v_j\in N_{in}(v_i),v_j\in A_{t-1}}w_{j,i} \ge \theta_i
 $$
@@ -219,7 +219,7 @@ $$
 - we can measure how the assortativity of the network changes over time
 - consider 2 snapshots of a network $G_t(V,E)$ and $G_{t'}(V,E')$ at times $t, t'$ respectively 
 - $V$ is fixed, $E$ are added and removed 
-- for **nominal attributes**, ==homophily index== is defined as
+- for **nominal attributes**, **homophily index** is defined as
 
 $$
 H = \mathcal Q^{t'}_\text{normalized} - Q^t_\text{normalized}
@@ -231,7 +231,7 @@ $$
 > $$
 > (i.e., $A_{i,j} = 1$ if nodes $i$ and $j$ are connected by an edge, and $A_{i,j} = 0$ otherwise)
 
-- for **ordinal attributes**, ==homophily index== is defined as the change in [Pearson correlation](#Pearson-Correlation)
+- for **ordinal attributes**, **homophily index** is defined as the change in [Pearson correlation](#Pearson-Correlation)
 
 $$
 H = \rho^{t'} - \rho^t
@@ -263,11 +263,11 @@ Homophily can be modeled using a variation of [ICM](Ch-7-Information-Diffusion-i
 
 ![image-20230504222133637](images/image-20230504222133637.png)
 
-> After we shuffle the timestamps of user activities, if the new estimate of ==temporal assortativity== is significantly different from the original estimate based on the user’s activity log, **there is evidence of influence**
+> After we shuffle the timestamps of user activities, if the new estimate of **temporal assortativity** is significantly different from the original estimate based on the user’s activity log, **there is evidence of influence**
 
 #### Measuring Temporal Assortativity
 
-<span style="color:red">this is not that important; the idea is temporal assortativity can be measured in different ways for the shuffle test and this is just one of them...</span>
+<span style="color:red">This is not that important; the idea is temporal assortativity can be measured in different ways for the shuffle test and this is just one of them...</span>
 
 - assume node activation probability $p(a)$ depends on $a$, the number of already-active friends of the node
 - assume $p(a)$ can be estimated using a logistic function
@@ -313,13 +313,13 @@ $$
 
 #### Influence Gain and Homophily Gain
 
-- if the <span style="color:orange">assortativity is due to influence</span>, ==influence gain== is positive
+- if the <span style="color:orange">assortativity is due to influence</span>, **influence gain** is positive
 
 $$
 G_\text{Influence}(t) = A(G_t,X_{t+1}) - A(G_t,X_t) > 0
 $$
 
-- if <span style="color:lime">it's due to homophily</span>, ==homophily gain== is positive (notice the first $A$ term)
+- if <span style="color:lime">it's due to homophily</span>, **homophily gain** is positive (notice the first $A$ term)
 
 $$
 G_\text{Homophily }(t) = A(G_{t+1},X_t) - A(G_t,X_t) > 0
@@ -352,3 +352,4 @@ $$
 - we remove the effect of homophily by generating $n$ random graphs $GR^i_{t+1}$ at time $t+1$
   - for any two (randomly selected) edges $e_{ij},e_{kl}$, we form new edges $e_{il},e_{kj}$
   - i.e. homophily effect remove while degrees stay the same
+

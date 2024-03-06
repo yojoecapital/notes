@@ -54,7 +54,7 @@
 
 ### Structured prediction
 
-- CRFs fall into a predictive modeling framework called ==structured prediction==
+- CRFs fall into a predictive modeling framework called **structured prediction**
   - when we have some complex structured object over which we want to make predictions...
     - examples: pixels in an image, tag sequences over syntactic trees
   - we try to estimate a probability distribution over the whole output space rather than distributions over subparts

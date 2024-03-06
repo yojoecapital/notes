@@ -107,17 +107,17 @@
 
 ### Complements and Adjuncts
 
-- ==complement==: syntactic elements that are **necessary to complete the meaning** of a sentence in a particular context
+- **complement**: syntactic elements that are **necessary to complete the meaning** of a sentence in a particular context
 
 <img src="images/image-20231205165400978.png" alt="image-20231205165400978" style="zoom:50%;" />
 
-- ==adjunct==: **optional** elements added to phrases of a particular category
+- **adjunct**: **optional** elements added to phrases of a particular category
 
 <img src="images/image-20231205165413846.png" alt="image-20231205165413846" style="zoom:50%;" />
 
 ### Compositionality
 
-- ==compositionality== is that semantic structure should mirror syntactic structure
+- **compositionality** is that semantic structure should mirror syntactic structure
 - meaning of larger units is a function of the meaning of smaller units and the way in which they are combined
 
 ### Structural Ambiguity
@@ -133,7 +133,7 @@
 
 ### Treebanks
 
-- a ==treebank== is a set of linguistic tree structures that humans have assigned to texts following a set of annotation guidelines
+- a **treebank** is a set of linguistic tree structures that humans have assigned to texts following a set of annotation guidelines
 - used for **training** & **evaluation** of syntactic parsing models
 - the best-known treebank is the **Penn Treebank**
 
@@ -144,4 +144,5 @@
   - label the opening bracket of a constituent with its category
 
 <img src="images/image-20231205170201640.png" alt="image-20231205170201640" style="zoom:50%;" />
+
 

@@ -26,14 +26,14 @@
 
 ### One-Hot Encoding of Words
 
-- a simple starting point for encoding words is to treat them as ==one-hot== vectors in space with one dimension for each word in the vocabulary
+- a simple starting point for encoding words is to treat them as **one-hot** vectors in space with one dimension for each word in the vocabulary
 
 <img src="images/image-20230926134731135.png" alt="image-20230926134731135" style="zoom:67%;" />
 
 ### Bag-of-Words Representation
 
 - given a vector representation of words, we can create a representation for **documents** in the same space
-- this is called a ==bag-of-words== representation because it treats meaning as a function of words counts
+- this is called a **bag-of-words** representation because it treats meaning as a function of words counts
   - i.e. the sum of all the [one-hot encoding of words](#One-Hot Encoding of Words) used in the document
   - this is a very limited representation of meaning
 
@@ -61,8 +61,8 @@ $$
 
 ### Stop lists
 
-- a ==stop list== is a list of words to be **ignored / excluded** for NLP tasks
-- typically, these include *closed-class* words (==stop words==) like
+- a **stop list** is a list of words to be **ignored / excluded** for NLP tasks
+- typically, these include *closed-class* words (**stop words**) like
   - determiners (a, an, the)
   - prepositions (of, with, by)
   - conjunctions (and, or)
@@ -100,14 +100,14 @@ $$
 
 ### Document Transformation Function
 
-- function to produce a vector for a **word** is referred to as ==embedding==
-- function to produce a vector for a **text** is referred to as a ==vectorizer==
+- function to produce a vector for a **word** is referred to as **embedding**
+- function to produce a vector for a **text** is referred to as a **vectorizer**
 
 #### Vectorization: how to represent multiple occurrences?
 
 - if words are represented as one-hot vectors how do we represent a document?
-  1. ==binary vectorizer== record 0/1 value indicating presence / absence of word in document
-  2. ==count vectorizer== record number of occurrences per word in document 
+  1. **binary vectorizer** record 0/1 value indicating presence / absence of word in document
+  2. **count vectorizer** record number of occurrences per word in document 
 
 #### Problems with binary & count vectorizers
 
@@ -122,10 +122,10 @@ $$
 #### TF-IDF  
 
 - solution to above: define a "score" for each component of the document vector associated with a given word $w$, broken down into 2 parts
-  1. ==term frequency TF== measure of the frequency of $w$ in the document
+  1. **term frequency TF** measure of the frequency of $w$ in the document
      - usually a sublinear transformation of the raw document count
      - example: $\log(1 + \text{Count}(w))$
-  2. ==inverse document frequency IDF== measure of rarity of $w$ across documents 
+  2. **inverse document frequency IDF** measure of rarity of $w$ across documents 
      - an inverse measure of the frequency with which $w$ occurs across documents 
      - example: $-\log \frac{\text{DocumentCount}(w)}{\text{Number of Documents}}$
        - $\text{DocumentCount}(w)$ is the number of documents with $w$ present
@@ -136,10 +136,10 @@ $$
 ## Lexical Representation
 
 - the [vector space model for text](#Vector Space Model of Text) **does not** represent characters and local context
-- ==lexical== generally, relating to words or to the vocabulary used for a task
-  - ==lexical embeddings== word representations for neural networks
-  - ==lexical semantics== meaning of words & word parts
-  - ==lexical diversity== range of vocabulary in the text
+- **lexical** generally, relating to words or to the vocabulary used for a task
+  - **lexical embeddings** word representations for neural networks
+  - **lexical semantics** meaning of words & word parts
+  - **lexical diversity** range of vocabulary in the text
 
 ### Levels of Lexical Representation
 
@@ -186,10 +186,10 @@ $$
 
 #### N-grams
 
-- ==unigrams== single word
-- ==bigrams== 2-word sequence
-- ==trigrams== 3-word sequence
-- ==n-grams== $n$-word sequence 
+- **unigrams** single word
+- **bigrams** 2-word sequence
+- **trigrams** 3-word sequence
+- **n-grams** $n$-word sequence 
 
 > example of trigrams in `"it was a dark and stormy night"`
 >
@@ -213,13 +213,13 @@ $$
 #### Wordnet & Synsets 
 
 - [Wordnet](https://wordnet.princeton.edu/) is a manually-compiled machine-readable dictionary for English
-- it can be used programmatically to lookup word ==synsets== (senses related to a set of words)
+- it can be used programmatically to lookup word **synsets** (senses related to a set of words)
 
 <img src="images/image-20231003134503649.png" alt="image-20231003134503649" style="zoom:50%;" />
 
 ### Sub-word Representations
 
-- ==sub-word== leverage character sequence representation of the word
+- **sub-word** leverage character sequence representation of the word
 - why is this needed?
   - [neologism](1-Introduction.md#Why is NLP Hard?) & [OOV](#Out of Vocabulary OOV Words) words
 - generally developed in an **unsupervised manner**
@@ -228,7 +228,7 @@ $$
 
 #### Byte-pair encoding & word pieces
 
-- ==byte-pair encoding== & ==word pieces== are 2 *unsupervised* methods for generating a [sub-word](#Sub-word Representations) vocabulary of a given size
+- **byte-pair encoding** & **word pieces** are 2 *unsupervised* methods for generating a [sub-word](#Sub-word Representations) vocabulary of a given size
 - based on *character* n-gram representation
   - example *bigram* for  `"natural"` is `[#n, na, at, ur, ra, al, l#]`
 - more useful for **machine translation** & **natural language generation** than **text categorization**
@@ -243,7 +243,7 @@ $$
     - <span style="color:SlateBlue"><u>is</u>, <u>not</u>, <u>the</u>, <u>when</u>ever, <u>which</u>ever</span>
   - when we factor it out of a word, the remaining pieces should also be useful parts
   - <span style="color:SlateBlue">show+ing, when+ever, wait+er, blue+berry</span>
-- ==byte-pair encoding== uses these principles to implement an algorithm for sub-word vocabulary induction
+- **byte-pair encoding** uses these principles to implement an algorithm for sub-word vocabulary induction
 
 > 1. generate a word frequency list
 >
@@ -323,3 +323,4 @@ vocab_tokenization.get("mountains</w>")
 - select a vocabulary 
   - dependent on corpus (text data)
   - remove stop words and infrequent words?
+

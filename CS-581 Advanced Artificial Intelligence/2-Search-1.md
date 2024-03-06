@@ -116,11 +116,11 @@ $h(n)$ is  **Consistent** if
    - $f(n') = g(n') + h(n')$
 
      substitute $g(n') = g(n) + c(n, n')$ so
-     $f(n') = g(n) + $ ==$c(n, n') + h(n')$==
+     $f(n') = g(n) + $ **$c(n, n') + h(n')$**
 
      $f(n) = g(n) + h(n)$
 
-     recall ==$h(n) \le c(n, n') + h(n')$== when $h(n)$ is consistent
+     recall **$h(n) \le c(n, n') + h(n')$** when $h(n)$ is consistent
 
      $\therefore f(n') \ge f(n)$ 
 
@@ -193,3 +193,4 @@ $$
 * **Space complexity**
 * **Completeness**: if a solution exists, will it be found
 * **Optimality**: is the found solution optimal
+

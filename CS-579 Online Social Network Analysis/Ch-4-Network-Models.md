@@ -253,3 +253,4 @@ so the probabilities $v$ connects to each node is
 
 Still none of the proposed models fully preserve all these 3 properties :cry:
 
+

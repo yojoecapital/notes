@@ -80,8 +80,8 @@
 
 <img src="images/image-20231010220858359.png" alt="image-20231010220858359" style="zoom:50%;" />
 
-- the output of our first node is known as the ==query== whereas the others are ==keys==
-- the dot product between the query is taken between each key to get ==attention scores== $\alpha$
+- the output of our first node is known as the **query** whereas the others are **keys**
+- the dot product between the query is taken between each key to get **attention scores** $\alpha$
 - the attention scores $\alpha$ are taken to a SoftMax to get $\alpha'$, which is computed as:
 
 $$
@@ -142,7 +142,7 @@ $$
 
 ### Self-attention vs CNN
 
-- ==CNN== is a self-attention that can only attend in a *receptive field*
+- **CNN** is a self-attention that can only attend in a *receptive field*
   - i.e. CNN is a *simplified self-attention*
   - Self-attention is the complex version of CNN
 

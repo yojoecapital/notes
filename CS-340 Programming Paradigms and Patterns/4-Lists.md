@@ -26,8 +26,8 @@
 #### Syntactic Sugar
 
 ```haskell
--- [1, 2, 3, 4, 5, 6] == 1:2:3:4:5:6:[]
--- "hello" == ['h', 'e', 'l', 'l', 'o'] == 'h' : 'e' : 'l' : 'l' : 'o' : []
+-- [1, 2, 3, 4, 5, 6] ** 1:2:3:4:5:6:[]
+-- "hello" ** ['h', 'e', 'l', 'l', 'o'] ** 'h' : 'e' : 'l' : 'l' : 'o' : []
 ['a' .. 'z']
 > "abcdefghijklmnopqrstuvwxyz"
 -- for instances of 'Enum' using builtin enumFromTo function
@@ -51,7 +51,7 @@ Implementing `enumFromTo` or the `..` thingy
 ```haskell
 > enumFromTo' :: (Ord a, Enum a) => a -> a -> [a]
 > enumFromTo' x y | x > y = []
->                 | x == y = x : []
+>                 | x ** y = x : []
 >                 | otherwise = x : enumFromTo' (succ x) y
 ```
 
@@ -82,7 +82,7 @@ take 5 ones
 ```
 > evens = [2*x | x <- [1..]]
 >
-> evens' = [x | x <- [1..], x `mod` 2 == 0]
+> evens' = [x | x <- [1..], x `mod` 2 ** 0]
 ```
 
 ```haskell
@@ -155,4 +155,5 @@ Break takes a *predicate* and a list then returns a split of the list where the 
 >         | p x = ([], l)
 >         | otherwise = let (ys, zs) = break' p xs in (x: ys, zs)
 ```
+
 

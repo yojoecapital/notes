@@ -26,7 +26,7 @@
 
 ### Latent Semantic Analysis LSA
 
-- one way to use the distributional hypothesis to learn word vectors is called ==latent semantic analysis==
+- one way to use the distributional hypothesis to learn word vectors is called **latent semantic analysis**
 - the idea is to construct a **matrix** that represents words & their context
   - then create a reduced-dimensionality version of that matrix that preserves the most distinctive & important characteristics of words' contextual associations
 
@@ -72,7 +72,7 @@
 
 ### `word2vec` model
 
-- ==representation learning== automatically learning useful features for a task rather than manually creating them
+- **representation learning** automatically learning useful features for a task rather than manually creating them
 - to do this task accurately, the model is trained to learn a **vector (or embedding) of the most useful attributes of a words**
 - *fake task*: build a model to **predict** the word that will show up in a given context (or, predict the context that is most appropriate for a given word) 
   - [CBOW](#Continuous Bag of Words CBOW)
@@ -135,20 +135,20 @@ $$
 
 > error backpropagation is a general framework for learning the parameters of a model (neural network)
 
-1. define a ==loss function== $\mathcal L$ to be **minimized**
+1. define a **loss function** $\mathcal L$ to be **minimized**
    - muse be differentiable
 2. calculate the derivatives of the loss with respect to its inputs
-   - vector derivatives of the loss with respect to its inputs or the ==gradient== $\nabla \mathcal L$
+   - vector derivatives of the loss with respect to its inputs or the **gradient** $\nabla \mathcal L$
 3. use the chain rule to get the derivatives of the loss for all parameters in the model
    - $\frac{\partial}{\partial x}(u(v(x)))=\frac{\partial}{\partial v}(u(v))\frac{\partial}{\partial x}(v(x))$
 4. update all parameters in the direction of the negative gradient
-   - ==gradient descent==
+   - **gradient descent**
 
 <img src="images/image-20231003165957661.png" alt="image-20231003165957661" style="zoom:50%;" />
 
 #### Gradient Descent for CBOW
 
-1. loss function $\mathcal L$ is ==cross-entropy==
+1. loss function $\mathcal L$ is **cross-entropy**
    - $\mathcal L = - \sum_{w\in V} y_w \log \hat p(w)$
    - where $y_w$ is an indicator variable with the value 1 when $w$ is the correct word $w^*$ and 0 otherwise
    - $\hat p(w)$ is the model's estimated probability for word $w$
@@ -214,4 +214,5 @@ $$
 - hand-annotation (supervision) is generally not required
 - *deeper* language features related to meaning, rather than specific words
 - in combination with sub-word tokenization, generate encodings of OOV words
+
 

@@ -108,3 +108,4 @@ $$
 - big data, big computation
 - if a neural network with a single hidden layer is a *universal approximator*, why go deep?
 
+

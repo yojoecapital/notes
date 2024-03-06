@@ -129,3 +129,4 @@ prop_c2f2c' c = forAll cTemp prop_c2f2c
 
 Shrinking:
 
+

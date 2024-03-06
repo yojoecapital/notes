@@ -15,9 +15,9 @@ $$
 $$
 
 - observe that gradient is averaged over $n$ samples
-- the idea behind ==Stochastic Gradient Descent== (SGD) is randomly select a small subset of training set or ==batch== (sometimes called *mini-batch*)
+- the idea behind **Stochastic Gradient Descent** (SGD) is randomly select a small subset of training set or **batch** (sometimes called *mini-batch*)
 - compute the gradient & update weights for *each* batch
-- a single pass over training set is called ==epoch==
+- a single pass over training set is called **epoch**
   - in practice SGD is done over multiple epochs
 - convergence with randomized sample over different epochs is either faster or has the same speech as convergence with non-randomized sampling
 
@@ -53,7 +53,7 @@ $$
 
   - if learning rate is not **annealed** convergence is not guaranteed
 
-    - ==anneal== means gradually reduce or adjust the learning rate during the training process
+    - **anneal** means gradually reduce or adjust the learning rate during the training process
 
   - necessary condition is
     $$
@@ -116,7 +116,7 @@ f_\text{MSE}(w) = \frac12 (\hat y - y)^2 \\= \frac12 (\sigma(x^\top w) - y)^2
 = x(\hat y-y)\hat y(1-\hat y)
 $$
 
-- the issue with the gradient is that $\hat y$ is between $[0,1]$ so the product of $x(\hat y-y)\hat y(1-\hat y)$ will be *very* small leading to ==vanishing gradient problem==
+- the issue with the gradient is that $\hat y$ is between $[0,1]$ so the product of $x(\hat y-y)\hat y(1-\hat y)$ will be *very* small leading to **vanishing gradient problem**
 - the alternative is to work in *log space*
 
 #### Log-Loss
@@ -127,6 +127,7 @@ f_{\log}(w) = -y\log\hat y - (1-y)\log(1-\hat y)\\\\
 \nabla_w f_{\log}(w) = \nabla_w[-(y\log \hat y - (1-y)\log (1-\hat y))]\\
 = -x(y-\sigma(x^\top w)) \\= x(y-\hat y)
 $$
+
 
 
 

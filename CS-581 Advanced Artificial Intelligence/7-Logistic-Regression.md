@@ -3,8 +3,8 @@
 [toc]
 
 -  Recall that Naïve Bayes basically says $P(Y|\vec X) \propto P(Y)P(\vec X|Y)$ where $P(Y)P(\vec X|Y) = P(Y) \Pi(x_i|Y)$ are found through data where it *assumes* that the features are independent
-- ==Logistic regression== learns $P(Y|\vec X)$ directly without going through $P(Y)P(\vec X|Y)$ 
-- It assumes $P(Y|\vec X)$ follows the ==logistic function==:
+- **Logistic regression** learns $P(Y|\vec X)$ directly without going through $P(Y)P(\vec X|Y)$ 
+- It assumes $P(Y|\vec X)$ follows the **logistic function**:
 
 $$
 P(Y = \text{false}|X_1,X_2,...,X_n) = \frac{1}{1 + e^s} \\
@@ -44,7 +44,7 @@ $$
 
 ### Conditional Log-Likelihood CLL
 
-Given $\mathcal D = \textlangle \vec X,Y \textrangle$, estimate $\vec W$ using ==conditional log-likelihood== $\text{CLL} = \sum_{d \in \mathcal D} \ln P(Y[d]|\vec X[d])$
+Given $\mathcal D = \textlangle \vec X,Y \textrangle$, estimate $\vec W$ using **conditional log-likelihood** $\text{CLL} = \sum_{d \in \mathcal D} \ln P(Y[d]|\vec X[d])$
 
 - group the summation into $\text{false}, \text{true}$
 
@@ -226,13 +226,13 @@ $$
 
 ![image-20230417171531320](images/image-20230417171531320.png)
 
-<span style="color:red">I did not go over this example; try to understand it</span>
+<span style="color:red">I did not go over this example; try to understand it future me 🙂</span>
 
 ### Batching and Epochs
 
-- When the dataset $\mathcal{D}$ is very large, instead of using gradient ascent on the entire set, ==batches== $B_i$ are takes where $B_i \sub \mathcal D$
+- When the dataset $\mathcal{D}$ is very large, instead of using gradient ascent on the entire set, **batches** $B_i$ are takes where $B_i \sub \mathcal D$
 - After every batch, the model is updated
-- When all batches in a $\mathcal D$ are taken, an ==epoch== has passed
+- When all batches in a $\mathcal D$ are taken, an **epoch** has passed
 
 > - Note that even though the logistic function itself is a *non-linear* objective function,  *logistic classifier* is linear
 > - This is because the decision is based on $s$ where $s$ is a linear combination
@@ -247,11 +247,11 @@ $$
 ### Categorical Features
 
 - Logistic regression's parameters are feature weights so features need to have values that *can* be multiplied by a weight
-- If we have ==binary features==, we can either use
+- If we have **binary features**, we can either use
   -  $0|1$ which is for **indictor** functions as $0$ means no weight is effected
   - $-1|+1$ which is for non-indicator functions
 - What if we have categorical features that have more that 2 possible values like `Brown,Black,Blue`
-  - use ==one-hot-encoding== where instead of making the feature a single variable, we make it multiple indicator function
+  - use **one-hot-encoding** where instead of making the feature a single variable, we make it multiple indicator function
 
 ### Regularization
 
@@ -313,4 +313,5 @@ $$
 > - $w_i \rightarrow 9-\epsilon$; The savings: $9 - (9-\epsilon) = \epsilon$
 > - $w_j \rightarrow 2 - \epsilon$; The savings: $2 - (2-\epsilon)=\epsilon$
 > - The savings are the same!
+
 

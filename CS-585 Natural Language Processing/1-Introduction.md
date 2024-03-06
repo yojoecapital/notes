@@ -22,7 +22,7 @@ The structure and patterning of sound within a language
 ### Morphology
 
 - internal structure of words
-- ==morphemes== include stems, prefixes, suffices, and infixes
+- **morphemes** include stems, prefixes, suffices, and infixes
 - Applications: stemming / lemmatization
 
 ### Syntax

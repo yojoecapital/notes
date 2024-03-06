@@ -109,7 +109,7 @@
 #### Version Space
 
 - A hypothesis $h$ is consistent with dataset $D$ and target $c$ if and only if $h$ agrees with $c$ on each example in $D$
-- ==Version space== with respect to hypothesis space $H$ and dataset $D$ is the set of all hypotheses in $H$ that are consistent with all examples in $D$
+- **Version space** with respect to hypothesis space $H$ and dataset $D$ is the set of all hypotheses in $H$ that are consistent with all examples in $D$
 
 #### Find-S Trace
 
@@ -138,3 +138,4 @@ The search begins with $h_0$ the most specific hypothesis then considers increas
 
 - This is an integration of the previous 2
 - Start with $S$ (specific boundary) that has only the most-specific hypothesis and $G$ (general boundary) that has only the most-general hypothesis and modify $S$ and $G$ with each training data
+

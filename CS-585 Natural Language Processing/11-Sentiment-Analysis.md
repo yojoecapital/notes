@@ -11,13 +11,13 @@
 
 ### Sentiment and *subjectivity*
 
-- ==sentiment== is *affective polarity*
+- **sentiment** is *affective polarity*
   - positivity or negativity of the content
 - but what if it's just factual, not evaluative?
   - i.e. "an oxygen atom has 8 protons"
 - in a sentiment task, we could say that these sentences are **neutral**
   - only **subjective** tasks can have sentiment
-- ==subjective detection== identify opinions and non-factual content
+- **subjective detection** identify opinions and non-factual content
 
 ### Sentiment and *emotion*
 
@@ -27,7 +27,7 @@
 
 - *stance* is the side of an issue taken by the speaker
   - usually binary (align or doesn't align with sentiment)
-- ==stance classification== identify author's position of support or opposition
+- **stance classification** identify author's position of support or opposition
 
 ---
 
@@ -92,7 +92,7 @@
 
 ## Sentiment & Aspect
 
-- ==aspect== is the characteristic or object of opinion focus within a text
+- **aspect** is the characteristic or object of opinion focus within a text
   - typically domain specific 
 
 <img src="images/image-20231004225017306.png" alt="image-20231004225017306" style="zoom:50%;" />

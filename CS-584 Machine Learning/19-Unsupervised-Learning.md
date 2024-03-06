@@ -9,7 +9,7 @@
 
 ## Clustering
 
-- intuitively, ==clusters== are the groups in the data for which points within the same group are more similar than points in different groups
+- intuitively, **clusters** are the groups in the data for which points within the same group are more similar than points in different groups
 
 ### Various Approaches
 
@@ -71,11 +71,11 @@
 
 ### EM Algorithm
 
-- ==E== (expectation) step: compute cluster component assignments
+- **E** (expectation) step: compute cluster component assignments
 
   - $P(C_i|x_j) \propto P(x_j|C_i)P(C_i)$
 
-- ==M== (maximization) step: recompute parameters
+- **M** (maximization) step: recompute parameters
 
   - $n_i = \sum_{j=1}^N P(C_i|x_j)$
 

@@ -2,7 +2,7 @@
 
 ## Functors
 
-- ==Functor== is a typeclass for things that can mapped over
+- **Functor** is a typeclass for things that can mapped over
 - the list type is part of the `Functor` typeclass
 
 ```haskell
@@ -34,7 +34,7 @@ classDef inv fill: #ffffff00, stroke: #ffffff00
 >     fmap = map  
 > ```
 
-- Types that can act like boxes can be ==functors== such as `Maybe a` or `[a]` (i.e. they can be mapped over)
+- Types that can act like boxes can be **functors** such as `Maybe a` or `[a]` (i.e. they can be mapped over)
 - To be exact, they *must* have a [kind](8-Defining-Types-and-Type-Classes.md#kinds-:k) of `* -> *`
 
 ```haskell
@@ -92,7 +92,7 @@ flowchart LR
 classDef inv fill: #ffffff00, stroke: #ffffff00
 ```
 
-The ==Applicative== class extends Functors with additional methods
+The **Applicative** class extends Functors with additional methods
 
 - `pure` takes a *pure* value and wraps it in a Functor instance (i.e. it puts it into a computational context)
 - `<*>` applies a function found in one Functor to a value in another Functor.
@@ -248,7 +248,7 @@ find p (x:xs) | p x = Just x
 
 ## Monads
 
-The ==Monad== class further extends Applicatives so that they support the additional methods `>>=` ("bind"), `>>` ("sequence"), and `return`
+The **Monad** class further extends Applicatives so that they support the additional methods `>>=` ("bind"), `>>` ("sequence"), and `return`
 
 ```haskell
 class (Applicative m) => Monad m where
@@ -391,4 +391,5 @@ do r1 <- func1 w
     r3 <- func3 y z
     return (r1, r2, r3)
 ```
+
 

@@ -94,3 +94,4 @@ $(\lambda x.y)((\lambda x.x \ x)(\lambda x.x \ x)) \rightarrow y$
 * with **eager evaluation**  $W \equiv (\lambda x.x \ x)(\lambda x.x \ x)$ would be evaluation before being passed to $(\lambda x.y)$ but $W$ never terminates its evaluation such that the machine will crash
 * with **lazy evaluation**, $W$ never actually gets evaluated before $y$ is returned
 
+

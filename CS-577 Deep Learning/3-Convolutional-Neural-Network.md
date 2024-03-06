@@ -4,7 +4,7 @@
 
 ## Why are CNNs good for images?
 
-There are ==3 properties== to look at:
+There are **3 properties** to look at:
 
 1. some patterns are much smaller than the whole image
    -  neuron does not have to see the whole image to discover them
@@ -17,8 +17,8 @@ There are ==3 properties== to look at:
 
 <img src="images/image-20230907164829722.png" alt="image-20230907164829722" style="zoom:50%;" />
 
-- **properties 1 & 2 are achieved by the ==convolution layers==**
-- **property 3 is achieved by the ==max pooling layer==**
+- **properties 1 & 2 are achieved by the **convolution layers****
+- **property 3 is achieved by the **max pooling layer****
 
 ### Convolution
 
@@ -52,7 +52,7 @@ $$
 $$
 
 - each filter detects a small $3 \times 3$ pattern
-- assuming the ==stride== is 1, start with filter 1 in the top left corner, and apply it as **a sum of element-wise multiplication**
+- assuming the **stride** is 1, start with filter 1 in the top left corner, and apply it as **a sum of element-wise multiplication**
 
 $$
 \begin{bmatrix}
@@ -166,7 +166,7 @@ $$
 \end{bmatrix}
 $$
 
-- and so on... until the ==feature map== is completed
+- and so on... until the **feature map** is completed
 
 <img src="images/image-20230907173335691.png" alt="image-20230907173335691" style="zoom:50%;" />
 
@@ -183,9 +183,9 @@ $$
 
 #### Padding
 
-- ==zero-padding== is when 0s are added around the input matrix such that after the convolution is done, the output matrix has the same dimension as the input
+- **zero-padding** is when 0s are added around the input matrix such that after the convolution is done, the output matrix has the same dimension as the input
   - refer to [assignment 1](assignments/Assignment_1/CS577_Assigment_1.pdf)
-- ==no padding== is when no padding is done
+- **no padding** is when no padding is done
 
 #### Convolution vs Fully Connected
 
@@ -297,3 +297,4 @@ model.add(Activation('softmax'))
   - some patterns are smaller than the whole
   - the same patterns appear in different regions
   - *however* Alpha Go does not use max pooling (as subsampling wouldn't make sense in this case)
+

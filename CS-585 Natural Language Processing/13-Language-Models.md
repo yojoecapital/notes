@@ -18,7 +18,7 @@
   - $P(W) = P(w_1,w_2,...,w_n)$
 - related task: probability of an upcoming words
   - $P(w_3|w_1,w_2)$
-- a model that can compute either of the above is a ==language model==
+- a model that can compute either of the above is a **language model**
 
 ---
 
@@ -123,7 +123,7 @@ $$
   - compare accuracy for A and B
 - difficulties:
   - extrinsic evaluation is time-consuming (can take days / weeks)
-  - so sometimes use **intrinsic evaluation** like ==perplexity==
+  - so sometimes use **intrinsic evaluation** like **perplexity**
 
 ### Perplexity
 
@@ -196,7 +196,7 @@ $$
 
 ##### Add-one estimation
 
-- a.k.a. ==Laplace smoothing==
+- a.k.a. **Laplace smoothing**
 - pretend we saw each word 1 more time than we did
   - i.e. add 1 to all the counts
 
@@ -216,10 +216,10 @@ $$
   - not generally used for N-grams
 - sometimes it helps to use *less* context
   - condition on less context for contexts you haven't learned much about
-- ==backoff==
+- **backoff**
   - use trigram if you have good evidence
   - otherwise, bigram & otherwise that, unigram
-- ==interpolation==
+- **interpolation**
   - max unigram, bigram, trigram
   - works better
 
@@ -245,8 +245,8 @@ $$
 
 ###  Unknown Words Token `<unk>`
 
-- ==closed vocabulary task== we know all the words in advance, so the vocabulary $V$ is fixed 
-- often we instead have an ==open vocabulary task== with OOV
+- **closed vocabulary task** we know all the words in advance, so the vocabulary $V$ is fixed 
+- often we instead have an **open vocabulary task** with OOV
   - create an unknown word token `<unk>` that is included in training dataset
   - any OOV gets mapped to `<unk>`
   - at decode time, use `<unk>` for any word not in the training set
@@ -270,4 +270,5 @@ $$
 - Kneser-Ney smoothing is more commonly used
 - for very large N-grams like the Web:
   - "stupid backoff" method
+
 

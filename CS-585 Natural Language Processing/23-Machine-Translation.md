@@ -6,7 +6,7 @@
 
 ## Parallel Corpora
 
-- ==parallel corpora== data sets pairing source language sentences with their translations to the target language
+- **parallel corpora** data sets pairing source language sentences with their translations to the target language
 
 ## How Machine Translation does NOT work
 
@@ -23,7 +23,7 @@
 
 ### The Noisy Channel Model
 
-- statistical MT is based on the ==noisy channel model==
+- statistical MT is based on the **noisy channel model**
   -  also used in data compression, speech recognition
 - when we observe some sequence of symbols, we hypothesize that it actually comes from a noisy encoding process
   - we start with different symbol sequence
@@ -52,4 +52,5 @@
   - count smoothing
   - backoff and interpolation
   - ...
+
 

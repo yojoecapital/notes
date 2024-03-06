@@ -21,8 +21,8 @@ When do we need recommender systems?
 
 ## Challenges
 
-- ==Cold Start Problem== we don't have enough data for a new user to recommend anything
-- ==Data Sparsity== we don't have enough historical information *for the system as a whole*
+- **Cold Start Problem** we don't have enough data for a new user to recommend anything
+- **Data Sparsity** we don't have enough historical information *for the system as a whole*
 - Attacks like push attacks: push up ratings by creating fake users
 - Privacy: employing user's private information to recommend things to others
 - Explanation: recommenders often don't provide explanation of *why* it recommended something
@@ -53,8 +53,8 @@ $$
 
 #### Rating Matrix
 
-- ==Explicit rating== entered by user directly (i.e. "1-5 stars")
-- ==Implicit rating== inferred by user behavior (i.e. watch time)
+- **Explicit rating** entered by user directly (i.e. "1-5 stars")
+- **Implicit rating** inferred by user behavior (i.e. watch time)
 
 #### Types of CF
 
@@ -115,7 +115,7 @@ $$
 #### Model-based CF
 
 - how do we find the underlying model?
-- ==Singular Value Decomposition (SVD)== linear algebra technique of a lossless matrix factorization to decompose matrix $X$ to 3 matrices $U\Sigma V^T$
+- **Singular Value Decomposition (SVD)** linear algebra technique of a lossless matrix factorization to decompose matrix $X$ to 3 matrices $U\Sigma V^T$
 - obtain a low-rank $k$ approximation $C$ of $X$
 - recommend using $X_k$
 
@@ -158,19 +158,19 @@ Find content of interest to (ideally) all members of a group of socially acquain
 
 How to aggregate the individuals' ratings to a group rating
 
-1. ==Maximizing Average Satisfaction== average everyone's ratings and choose the max
+1. **Maximizing Average Satisfaction** average everyone's ratings and choose the max
 
 $$
 R_i = \frac1n\sum_{u\in G}r_{u,i}
 $$
 
-2. ==Least Misery== max of all minimums (minimize dissatisfaction)
+2. **Least Misery** max of all minimums (minimize dissatisfaction)
 
 $$
 R_i = \min_{u\in G}r_{u,i}
 $$
 
-3. ==Most Pleasure== max of a individuals max ratings
+3. **Most Pleasure** max of a individuals max ratings
 
 $$
 R_i = \max_{u\in G}r_{u,i}
@@ -244,14 +244,14 @@ $$
 
 #### Predictive Accuracy
 
-- ==Mean Absolute Error MAE== measures the average absolute deviation between a predicted rating $\hat r$ and the user’s true rating $r$
+- **Mean Absolute Error MAE** measures the average absolute deviation between a predicted rating $\hat r$ and the user’s true rating $r$
 
 $$
 \text{MAE} = \frac{\sum_{ij}|\hat r_{ij}-r_{ij}|}n\\
 \text{Normalized: NMAE} = \frac{\text{MAE}}{r_\max-r_\min}
 $$
 
-- ==Root Mean Square Error (RMSE)== similar to MAE, but places more emphasis on larger deviation
+- **Root Mean Square Error (RMSE)** similar to MAE, but places more emphasis on larger deviation
 
 $$
 \text{RMSE} = \sqrt{\frac1n\sum_{ij}(\hat r_{ij}-r_{ij})^2}
@@ -265,19 +265,19 @@ $$
 
 <img src="images/image-20230505015517043.png" alt="image-20230505015517043" style="zoom: 80%;" />
 
-- ==Precision== a measure of exactness, determines the fraction of relevant items retrieved out of all items retrieved
+- **Precision** a measure of exactness, determines the fraction of relevant items retrieved out of all items retrieved
 
 $$
 P=\frac {N_{rs}} {N_s}
 $$
 
-- ==Recall== a measure of completeness, determines the fraction of relevant items retrieved out of all relevant items
+- **Recall** a measure of completeness, determines the fraction of relevant items retrieved out of all relevant items
 
 $$
 R=\frac{N_{rs}}{N_r}
 $$
 
-- ==F1==
+- **F1**
 
 $$
 F = \frac{2\times P \times R}{P+R} \in [0,1]
@@ -297,7 +297,7 @@ $$
 \rho = 1 - \frac{6\sum_{i=1}^n(x_i-y_i)^2}{n^3-n}
 $$
 
-- ==Kendall's Tau $\tau$== compares the order of the rankings from the recommender with the ground truth ranking list
+- **Kendall's Tau $\tau$** compares the order of the rankings from the recommender with the ground truth ranking list
 
 $$
 \tau = \frac{c-d}{n \choose 2}

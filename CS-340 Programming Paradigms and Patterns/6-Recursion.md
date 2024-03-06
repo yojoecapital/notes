@@ -81,7 +81,7 @@ sumPositives (x:xs) = (if x > 0 then x else 0) + sumPositives xs
 -- given a list of strings, return a list of all the palindroms in the list
 palindromes :: [String] -> [String]
 palindromes [] = []
-palindromes (w:ws) | w == reverse w = w : palindromes ws
+palindromes (w:ws) | w ** reverse w = w : palindromes ws
                    | otherwise = palindromes ws
 ```
 
@@ -90,7 +90,7 @@ Another way of doing palindromes using `if-then-else` syntax is
 ```haskell
 palindromes :: [String] -> [String]
 palindromes [] = []
-palindromes (w:ws) = (if w == reverse w then (w:) else id) (palindromes ws)
+palindromes (w:ws) = (if w ** reverse w then (w:) else id) (palindromes ws)
 ```
 
 - where the `if-then-else` expression returns a functions; either `(w:)` or the identity function `id`
@@ -207,7 +207,7 @@ factorial' n acc = factorial' (n-1) (acc * n)
 -- tail recursive factorial with hidden accumulator
 factorial'' :: Integer -> Integer
 factorial'' n = f 1 1
-    where f m r | m == n = r * n
+    where f m r | m ** n = r * n
                 | otherwise = f (m+1) (r*m)
 ```
 
@@ -224,12 +224,12 @@ reverse' l = rev l []
 ```haskell
 enumFromTo' :: Integer -> Integer -> [Integer]
 enumFromTo' n m | m > n = []
-                | m == n = [m]
+                | m ** n = [m]
                 | otherwise = m : enumFromTo' (m+1) n
 -- enumerate the integers from m to n (with an accumulator)
 enumFromTo'' :: Integer -> Integer -> [Integer]
 enumFromTo'' m n = eft m []
-  where eft i r | i == n = reverse (n : r)
+  where eft i r | i ** n = reverse (n : r)
                 | otherwise = eft (i+1) (i:r)
 ```
 
@@ -249,3 +249,4 @@ enumFrom'' n = ef n []
 - notice that we **cannot** use tail recursion for infinite lists
 - if we try to use `take` on it, it will never end evaluating
 - this is because when we use an accumulator, we actually end up with an infinite *expression* instead of an infinite *list*
+

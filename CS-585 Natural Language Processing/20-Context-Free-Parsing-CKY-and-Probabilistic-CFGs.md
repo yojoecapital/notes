@@ -4,7 +4,7 @@
 
 ### Constituents
 
-- to study syntax, we break sentences into ==constituents==, or continuous sequences of words that function as a coherent unit
+- to study syntax, we break sentences into **constituents**, or continuous sequences of words that function as a coherent unit
 
 <img src="images/image-20231205170356175.png" alt="image-20231205170356175" style="zoom:50%;" />
 
@@ -47,8 +47,8 @@
 
 ### Parser Properties
 
-- ==soundness== a parser is sound if every parse returned is valid in the grammar
-- ==completeness== a parser is complete if for every grammar & sentence it returns every valid parse for that sentence
+- **soundness** a parser is sound if every parse returned is valid in the grammar
+- **completeness** a parser is complete if for every grammar & sentence it returns every valid parse for that sentence
 - soundness is *key*
 - but completeness may be difficult (or undesirable for highly ambiguous grammars)
   - instead of returning every valid parse, return the one(s) that make most sense
@@ -77,7 +77,7 @@
 
 ### Chomsky Normal Form CNF
 
-- ==Chomsky normal form== is a constraint on the grammar where
+- **Chomsky normal form** is a constraint on the grammar where
   - RHS is either 2 non-terminals or a terminal
 - all CFGs can be written in CNF
 
@@ -85,7 +85,7 @@
 
 ### Cocke-Kasami-Younger CKY
 
-- ==Cocke-Kasami-Younger== is an algorithm for parsing context-free grammars
+- **Cocke-Kasami-Younger** is an algorithm for parsing context-free grammars
 
 #### CKY Example (in CNF)
 

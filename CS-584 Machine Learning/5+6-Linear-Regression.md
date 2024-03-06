@@ -239,7 +239,7 @@ $$
 
 ## Regularization
 
-- ==L~2~ regularization== $\sum w^2$
+- **L~2~ regularization** $\sum w^2$
   - minimize squared-loss + L~2~ penalty
   - also called *Ridge regression*
   - **smoothing**
@@ -252,7 +252,7 @@ $$
 f_\text{MSE} = \frac12 \sum_{i=1}^n(g(x_i;w)-y_i)^2 + \lambda \sum_{j=1}^mw_j^2
 $$
 
-- ==L~1~ regularization== $\sum |w|$
+- **L~1~ regularization** $\sum |w|$
   - minimize squared-loss + L~1~ penalty
   - also called *Lasso regression*
   - **feature selection** by eliminating features
@@ -264,7 +264,7 @@ $$
 f_\text{MSE} = \frac12 \sum_{i=1}^n(g(x_i;w)-y_i)^2 + \lambda \sum_{j=1}^m|w_j|
 $$
 
-- ==ElasticNet== 
+- **ElasticNet** 
   - a combination of the two
 
 $$
@@ -275,17 +275,17 @@ $$
 
 ## More Regression Metrics
 
-- ==Pearson Correlation Coefficient==
+- **Pearson Correlation Coefficient**
   - returns value in $[0,1]$ where 1 mean our model adequately describes the data 
 
 <img src="images/image-20230924164525348.png" alt="image-20230924164525348" style="zoom:50%;" />
 
-- ==Spearman Correlation Coefficient==
+- **Spearman Correlation Coefficient**
   - assesses whether there is a consistent, *non-linear relationship* between two sets of data points
 
 <img src="images/image-20230924164536521.png" alt="image-20230924164536521" style="zoom:50%;" />
 
-- ==Coefficient of Determination $R^2$==
+- **Coefficient of Determination $R^2$**
   - measures the proportion of the total variance in the target that is explained by the predictors in the model
   - values closer to 1 indicates a better fit of the model
 
@@ -319,4 +319,5 @@ $$
 
 - Check out the bias-variance demo [here](CS584\notebooks\bias-variance.ipynb)
 - Check out the regularization demo [here](CS584\notebooks\regularization.ipynb)
+
 

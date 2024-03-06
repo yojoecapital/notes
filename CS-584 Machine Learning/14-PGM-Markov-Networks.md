@@ -119,7 +119,7 @@
 ##### Factors
 
 - let $D$ be a set of random variables
-- a ==factor $\phi$== is a function from $\text{Val}(D)$ to $\mathbb R$
+- a **factor $\phi$** is a function from $\text{Val}(D)$ to $\mathbb R$
 - a factor is nonnegative if all entries are nonnegative
 - the *scope of a factor* (denoted as $\text{Scope}(\phi)$) is the set of variables $D$ it is associated with
 
@@ -132,7 +132,7 @@
 
 ##### Gibbs Distribution
 
-- a distribution $P$ is a ==Gibbs distribution== parameterized by a set of factors $\Phi = \{\phi(D_1),...,\phi(D_k)\}$ if it is defined as follows
+- a distribution $P$ is a **Gibbs distribution** parameterized by a set of factors $\Phi = \{\phi(D_1),...,\phi(D_k)\}$ if it is defined as follows
 
 $$
 P(X_1,...,X_n) = \frac{1}{Z}\prod_{i=1}^k \phi(D_i)
@@ -152,7 +152,7 @@ $$
 
 - $\epsilon(D)=-\ln(\phi(D))$ is often called the *energy function*
 - in statistical physics, the probability of a physical state depends inversely on its energy
-- ==Log-Linear models== guarantee that the factors are positive, guaranteeing that the probability is positive
+- **Log-Linear models** guarantee that the factors are positive, guaranteeing that the probability is positive
 
 $$
 P(X_1,...,X_n) = \frac1Z \prod_{i=1}^k\phi_i(D_i)\\
@@ -185,3 +185,4 @@ $$
 - pairwise Markov random fields do not introduce additional independencies but
   - number of parameters is quadratic instead of exponential 
   - sets of distributions that can be represented over maximal cliques & pairwise interactions are not the same
+

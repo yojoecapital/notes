@@ -62,9 +62,9 @@
 ## Expectation Maximization EM
 
 - combines **generative** modeling of Naive Bayes with **latent variable** modeling of soft K-means
-  - ==generative model== models **joint probability** of class labels and observations
+  - **generative model** models **joint probability** of class labels and observations
     - aims to understand *how* data is generated
-  - ==discriminative model== models **conditional probability** of labels given observations
+  - **discriminative model** models **conditional probability** of labels given observations
     - focusses on separating & classifying data 
 - EM framework (not a single algorithm) is an **iterative** framework to find **maximum likelihood estimate** given a set of latent variables
 
@@ -73,24 +73,24 @@
 - soft clustering method to solve
   - $\theta^* = \underset{\theta}{\text{argmax }}P_\text{model}(X|\theta)$
 - *note* any occurrence of the data consists of
-  - ==observable variables== the object we see
+  - **observable variables** the object we see
     - *bag of words*
     - *word sequences* in tagging tasks
-  - ==hidden variables== which cluster generated which object
+  - **hidden variables** which cluster generated which object
     - *document categories*
     - *underlying tag sequences*
 
 ### Two Principles: Expectation vs Maximization
 
-- ==Expectation== if we knew $\theta$, we could compute the expected values of the hidden variables (i.e. probability of $x$ belonging to some cluster)
-- ==maximization== if we knew the hidden structure, we could compute the maximum likelihood value of $\theta$
+- **Expectation** if we knew $\theta$, we could compute the expected values of the hidden variables (i.e. probability of $x$ belonging to some cluster)
+- **maximization** if we knew the hidden structure, we could compute the maximum likelihood value of $\theta$
 
 ### Iterative Solution
 
 - initialization: choose an initial $\theta$
 - then iterate until convergence
-  - ==E-step== compute $(X,Z_i) = E[X,Z|\theta_i]$
-  - ==M-step== choose $\theta_{i+1}$ to maximize $P(X,Z_i, \theta_{i+1})$
+  - **E-step** compute $(X,Z_i) = E[X,Z|\theta_i]$
+  - **M-step** choose $\theta_{i+1}$ to maximize $P(X,Z_i, \theta_{i+1})$
 - if M-step can't be computed, we can also move along its gradient
 
 ### EM for Naive Bayes Text Classification

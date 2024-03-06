@@ -32,7 +32,7 @@ y = \text{sign}(w_0 + \sum w_ix_i)= \text{sign}(\vec w \cdot \vec x)
 $$
 
 - where $y$ is `+1` if $\text{sign}$ is greater 0 and `-1` if less than 0
-- the bipolar step function or $\text{sign}$ is the ==activation function== of the perceptron
+- the bipolar step function or $\text{sign}$ is the **activation function** of the perceptron
 
 ### Example Uses of Perceptron
 
@@ -142,16 +142,16 @@ $$
 
 ![image-20230427135017162](images/image-20230427135017162.png)
 
-- ==Feedforward== refers to how information flows from input to output in a single direction, without any feedback loops.
-- A ==dense layer== is where every node in the layer connected to the each node in the next layer
+- **Feedforward** refers to how information flows from input to output in a single direction, without any feedback loops.
+- A **dense layer** is where every node in the layer connected to the each node in the next layer
 - A Logistic regression model can be thought of as a feedforward network with no hidden layers such that it can perform *linear classification*
 
 > ###### Having Multiple Output Nodes
 >
-> - ==Multiclass Classification== is when we have classes $\{c_1, c_2,..., c_k\}$ and each instance belongs to one class
+> - **Multiclass Classification** is when we have classes $\{c_1, c_2,..., c_k\}$ and each instance belongs to one class
 >   - We can use a *SoftMax* activation function which is similar to [sigmoid](#Binary-Sigmoid-Function) but can provide a probability distribution across all the classes
 >   - This is how [PokéScanner](https://github.com/fchv/PokeScanner) works
-> - ==Multilabel Classification== is when we have labels $\{c_1, c_2,..., c_k\}$ but these labels are *binary* such that each instance can be assigned multiple labels 
+> - **Multilabel Classification** is when we have labels $\{c_1, c_2,..., c_k\}$ but these labels are *binary* such that each instance can be assigned multiple labels 
 >   - We can use a [sigmoid](#Binary-Sigmoid-Function) activation function for each output node
 
 <hr/>
@@ -195,7 +195,7 @@ $$
 $$
 
 - by combining the summation, its a kind of mask because when $t=1$, one side is 0 and when $t=0$, the other side is 0
-- ==Cross Entropy== is $\text{Cross Entropy} = -\text{CLL}$
+- **Cross Entropy** is $\text{Cross Entropy} = -\text{CLL}$
 
 #### Squared Error
 
@@ -305,7 +305,7 @@ $$
 = [(1-t)y-t(1-y)] * A
 $$
 
-- We call $[(1-t)y-t(1-y)]$ the ==residual error==
+- We call $[(1-t)y-t(1-y)]$ the **residual error**
 
 <hr/>
 
@@ -437,7 +437,6 @@ Find $\frac{\partial E}{\partial w_x}$
 $$
 \frac{\partial E}{\partial w_A} =  \frac{\partial E}{\partial y} * y(1-y) * w_D * (1-D)(1+D) * w_C * C(1-C) * w_B B(1-B) * w_A * (1-A)(1+A) * X
 $$
-<span style="color:red">look up examples of backpropagation with numbers as that is what will be asked on the exam</span>
 
 ## Overfitting
 
@@ -463,8 +462,8 @@ $$
 ### Convolutional Neural Networks CNN :framed_picture:
 
 - Given a (for example, greyscale) image of 32 by 32 pixels
-- a CNN, uses convolutional layers with kernels or ==filters== of say ==size== 3 by 3 with some associated weights (9 of them)
-  - convolution also have ==strides== that shift the filters across vertically and horizontally across the image
+- a CNN, uses convolutional layers with kernels or **filters** of say **size** 3 by 3 with some associated weights (9 of them)
+  - convolution also have **strides** that shift the filters across vertically and horizontally across the image
   - filters produce features maps based on their associated weights (certain patterns the CNN picks up during training)
 
 > ![image-20230502172116319](images/image-20230502172116319.png)

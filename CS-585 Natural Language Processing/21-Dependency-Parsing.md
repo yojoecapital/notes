@@ -2,7 +2,7 @@
 
 ## Revisiting PCFPs: Lexicalization
 
-- another approach to incorporating contextual information into PCFGs is ==lexicalization== 
+- another approach to incorporating contextual information into PCFGs is **lexicalization** 
 - not that the likelihood of specific rules applying often *depends on specific words*  (especially, subcategorization)
 - the idea of lexicalization is to use properties of phrasal head words to get better estimates of rule probabilities 
 
@@ -23,7 +23,7 @@
 
 ## Dependency Structures
 
-==Dependency== is a labeled, asymmetric relationship between two words
+**Dependency** is a labeled, asymmetric relationship between two words
 
 <img src="images/image-20231205214755384.png" alt="image-20231205214755384" style="zoom:50%;" />
 
@@ -53,7 +53,7 @@
 - *only one* element is independent (**the root**)
 - all other elements depend on some other element
 - no element depends directly on more than one element
-- ==projectivity== if *A* depends **directly** on *B* and some element *C* is between them in the **string** then *C* must depend on *A, B*, or some other element between them
+- **projectivity** if *A* depends **directly** on *B* and some element *C* is between them in the **string** then *C* must depend on *A, B*, or some other element between them
   - this may not always be suitable (may not always hold on all grammars) such as in this [example](#Discontinuous constituents)
 
 #### Projectivity Property
@@ -74,6 +74,7 @@
 ## Dependency Structures and Phrase Structure
 
 - for projective dependency parsing, we have the option of just doing regular CFG parsing and converting to dependencies later
+
 
 
 

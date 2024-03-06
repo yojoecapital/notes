@@ -4,15 +4,15 @@
 
 ## Core Terminology Review
 
-- ==Data== any piece of information that holds value and is worth keeping
-- ==Database== organized collection of interrelated data that models something
-- ==Query== operation that retrieves specific data based on some condition(s)
-- ==Relation== organization of data into a two dimensional table
+- **Data** any piece of information that holds value and is worth keeping
+- **Database** organized collection of interrelated data that models something
+- **Query** operation that retrieves specific data based on some condition(s)
+- **Relation** organization of data into a two dimensional table
   - rows (tuples) represent basic entities
   - columns (attributes) represent properties of those entities
-- ==Schema== a description of the structure of the database often called "metadata"
+- **Schema** a description of the structure of the database often called "metadata"
   - good for syntax error handling
-- ==DBMS== (Database Management System) is software that allows applications to store & analyze databases
+- **DBMS** (Database Management System) is software that allows applications to store & analyze databases
 
 ### What do we want from a DBMS
 

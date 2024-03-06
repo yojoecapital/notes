@@ -29,8 +29,8 @@
 
 ### Graphs
 
-- ==degree== of $X_i$ is number of edges $X_i$ is part of
-- ==indegree== of $X_i$ is number of directed edges pointing to $X_i$
+- **degree** of $X_i$ is number of edges $X_i$ is part of
+- **indegree** of $X_i$ is number of directed edges pointing to $X_i$
 - **degree of a graph** is max degree of a node in graph
 
 ---
@@ -53,7 +53,7 @@
 - $\text{Pa}(X_i)$ denote parents of $X_i$ 
 - $\text{ND}(X-i)$ denote variables that **are not** descendants of $X_i$
 - $\mathcal G$ assumes $X_i \perp \text{ND}(X_i) | \text{Pa}(X_i)$
-- these independencies are called the ==local independencies==
+- these independencies are called the **local independencies**
 
 ### Bayesian Network Factorization
 
@@ -69,17 +69,17 @@ $$
 
 ### Reasoning Patterns
 
-- ==causal reasoning== causes to effects
+- **causal reasoning** causes to effects
   - A → B → C
 
 <img src="images/image-20231017075436134.png" alt="image-20231017075436134" style="zoom:67%;" />
 
-- ==evidential reasoning==  effects to causes
+- **evidential reasoning**  effects to causes
   - A ← B ← C
 
 <img src="images/image-20231017075451098.png" alt="image-20231017075451098" style="zoom:67%;" />
 
-- ==intercausal reasoning== explaining away
+- **intercausal reasoning** explaining away
   - A → B ← C
 
 <img src="images/image-20231017075501213.png" alt="image-20231017075501213" style="zoom:67%;" />
@@ -105,15 +105,16 @@ $X,Y$ are independent if the information can't flow from one to other
 
 ##### Trails
 
-- ==casual trail== X → Z → Y
+- **casual trail** X → Z → Y
   - information can flow between $X,Y$ if $Z$ is not observed
   - but if $Z$ is observed, it blocks information flow ($X \perp Y|Z$)
-- ==evident trail== X ← Z ← Y
+- **evident trail** X ← Z ← Y
   - information can flow between $X,Y$ if $Z$ is not observed
   - but if $Z$ is observed, it blocks information flow ($X \perp Y|Z$)
-- ==common cause== X ← Z → Y
+- **common cause** X ← Z → Y
   - information can flow between $X,Y$ if $Z$ is not observed
   - but if $Z$ is observed, it blocks information flow ($X \perp Y|Z$)
-- ==common effect== X → Z ← Y (v-structure)
+- **common effect** X → Z ← Y (v-structure)
   - information can flow between $X,Y$ only if $Z$ or at least one of $Z's$ descendants is observed
+
 

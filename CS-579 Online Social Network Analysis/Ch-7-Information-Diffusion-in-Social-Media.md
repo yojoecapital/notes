@@ -13,7 +13,7 @@
 - Network is observable
 - Only public information is available
 
-In general, **herd behavior**'s network is close to a ==complete graph== where nodes can observe most other nodes and they can observe public information (i.e. they can see the crowd)
+In general, **herd behavior**'s network is close to a **complete graph** where nodes can observe most other nodes and they can observe public information (i.e. they can see the crowd)
 
 ### Examples of Herd Behavior
 
@@ -54,8 +54,6 @@ In general, **herd behavior**'s network is close to a ==complete graph== where n
 
 - regardless of what marbles there are, herding always happens at the 4th level
 
-<span style="color:red">check slide 15-19 of "Ch 7 - Information Diffusion I" for a full example using Bayes' Rule</span>
-
 ### Herding Intervention
 
 - herding can be intervened by releasing private information
@@ -83,7 +81,7 @@ In **information cascade**, a piece of information/decision cascaded among some 
 
 ### Assumptions for Cascade Models
 
-- Network is a ==directed graph== where edges depict communication channels between nodes
+- Network is a **directed graph** where edges depict communication channels between nodes
 - A node can only influence nodes that it is connected to
 - Decisions are binary where nodes are either
   - **Active**: the node adopted the behavior or decision and can activate its neighbors
@@ -147,7 +145,7 @@ The resulting set $S$ activates at least $1-1/e \approx 63\%$ from the optimal s
 
 > To use $f(S)$, we need an activation rule
 >
-> For example, an activation rule can be `abs(i - j) mod 3 == 2` where
+> For example, an activation rule can be `abs(i - j) mod 3 ** 2` where
 > `i` is the index of the sender and `j` is the index of the receiver
 > if their difference mod 3 equals 2 then the receiver gets activated
 >
@@ -243,7 +241,7 @@ $$
 
 ![image-20230410152635149](images/image-20230410152635149.png)
 
-- SI model has a ==logistic growth function== compared to the HIV/AIDS growth in the United States
+- SI model has a **logistic growth function** compared to the HIV/AIDS growth in the United States
 
 #### SIR Model
 
@@ -306,3 +304,4 @@ SIS model simulated with $S_0 = 99, I_0 = 1, B = 0.01, \lambda=0.2, \gamma = 0.1
 ### Epidemic Intervention
 
 Randomly pick some nodes and ask them who is the most popular from their point of view, then vaccinate those individuals!
+

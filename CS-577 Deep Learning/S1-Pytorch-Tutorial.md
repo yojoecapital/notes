@@ -27,7 +27,7 @@ torch.cuda.get_device_name(0)
 
 ### Tensor
 
-- ==Tensors== are a fundamental and specialized data structure similar to NumPy arrays 
+- **Tensors** are a fundamental and specialized data structure similar to NumPy arrays 
 - however, they run on GPU (unlike NumPy arrays)
 
 <img src="images/image-20230919163627870.png" alt="image-20230919163627870" style="zoom:80%;" />
@@ -78,9 +78,9 @@ class Net(nn.Module):
 
 #### Train a Simple Network
 
-1. ==Forward== compute output of each layer
-2. ==Backward== compute gradient
-3. ==Update== update the parameters with computed gradient
+1. **Forward** compute output of each layer
+2. **Backward** compute gradient
+3. **Update** update the parameters with computed gradient
 
 ```python
 import torch
@@ -111,7 +111,7 @@ for t in range(500):
         param.data -= learning_rate * param.grad.data
 ```
 
-We can also use an ==optimizer== for different update rules
+We can also use an **optimizer** for different update rules
 
 ```python
 learning_rate = 1e-4
@@ -130,9 +130,9 @@ for t in range(500):
 
 ##### Batch Size
 
-- one ==epoch== is one forward pass and one backward pass of *all* training examples
-- ==batch size== is the number of training examples in one forward / backward pass. The higher the batch size, the more memory space you'll need
-- the number of ==iterations== is the number of *passes*, each pass using *batch size* number of examples
+- one **epoch** is one forward pass and one backward pass of *all* training examples
+- **batch size** is the number of training examples in one forward / backward pass. The higher the batch size, the more memory space you'll need
+- the number of **iterations** is the number of *passes*, each pass using *batch size* number of examples
   - to be clear, **one pass** includes both a forward and backward pass (they are **not** considered as two different passes)
 
 > if you have $1000$ training examples and your batch size is $500$, then it will take $2$ iterations to complete $1$ epoch
@@ -150,4 +150,5 @@ for t in range(500):
 ## TensorBoard
 
 [TensorBoard](https://www.tensorflow.org/tensorboard) is a tool to show the progress of multiple projects
+
 

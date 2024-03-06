@@ -7,7 +7,7 @@
   - typically for shorter texts
 - similarly we can make predictions at the text level 
   - **or we can make predictions associated with each word in the text** incorporating information from the surrounding sequence
-  - these are ==sequence labeling tasks==
+  - these are **sequence labeling tasks**
 
 - sequence labeling involves associating a predicted label or tag with each word
 
@@ -44,7 +44,7 @@
 
 ### Tagsets
 
-- ==tagsets== are canonical definitions of parts of speech
+- **tagsets** are canonical definitions of parts of speech
   - maybe more or less granular
   - typically language-specific (although there are universal ones for nouns, verbs...)
   - an example is the **BNC parts of speech** for English

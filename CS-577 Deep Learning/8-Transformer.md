@@ -101,3 +101,4 @@
 - the <span style="color:blue">blue</span> inputs are from the encoder and the <span style="color:MediumSpringGreen">green</span> are from the decoder itself
 
 <img src="images/image-20231011074211321.png" alt="image-20231011074211321" style="zoom:50%;" />
+

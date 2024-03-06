@@ -28,7 +28,7 @@
 ## Generalized Linear Models GLMs
 
 - a framework for associating linear functions with distributions for use in optimization / estimation
-- idea: define a ==link function== $g$ that determines the relationship between the score function $\Psi$ (linear model) & the expected value of the distribution we are interested in
+- idea: define a **link function** $g$ that determines the relationship between the score function $\Psi$ (linear model) & the expected value of the distribution we are interested in
 
 $$
 g(E[Y=y|X=\vec x]) = \theta^\top f(\vec x,y)
@@ -51,8 +51,8 @@ $$
 $$
 
 - *note* that $1-P(Y=1|X=\vec x) = P(Y=0|X=\vec x)$
-- the ==logit function== is the link that transforms our probabilities into the linear output of our model
-- to get from the linear outputs to probability space, we can use ==inverse logit== (a.k.a. sigmoid squashing function)
+- the **logit function** is the link that transforms our probabilities into the linear output of our model
+- to get from the linear outputs to probability space, we can use **inverse logit** (a.k.a. sigmoid squashing function)
 
 $$
 P(Y=1|X=\vec x) = \frac{e^{\theta^\top f(\vec x,y)}}{1+e^{\theta^\top f(\vec x,y)}}
@@ -63,7 +63,7 @@ $$
 #### Inverse Logit & SoftMax
 
 - inverse logit maps from linear outputs to normalized probabilities for binary classification 
-- what if we have more that 2 classes? ==categorical logistic regression==
+- what if we have more that 2 classes? **categorical logistic regression**
 - SoftMax: (also recall from [`word2vec`](6-Neural-Word-Embeddings.md#SoftMax))
 
 $$
@@ -126,10 +126,10 @@ $$
 ### Regularization
 
 - Bias-Variance tradeoff
-  - ==bias== parameters should stay within "reasonable" bounds
+  - **bias** parameters should stay within "reasonable" bounds
     - not too many of them should be too large
-  - ==variance== parameters should be allowed to *vary* to capture the observed structure of the training data
-- ==regularization== is a mechanism for *increasing bias at the expense of variance*
+  - **variance** parameters should be allowed to *vary* to capture the observed structure of the training data
+- **regularization** is a mechanism for *increasing bias at the expense of variance*
 
 ### L~2~ Regularization for Logistic Regression
 
@@ -140,7 +140,7 @@ $$
 \log L(\theta) = -\sum_{i=1}^N \log P(y_i|\vec x_i;\theta) + \frac{\lambda}{2}||\theta||^2
 $$
 
-- the $\frac \lambda 2 ||\theta||^2$ is the ==ridge penalty==
+- the $\frac \lambda 2 ||\theta||^2$ is the **ridge penalty**
 
 ### L~1~ Regularization for Logistic Regression
 
@@ -148,5 +148,5 @@ $$
 \log L(\theta) = -\sum_{i=1}^N \log P(y_i|\vec x_i;\theta) + \lambda||\theta||
 $$
 
-- ==L~1~ penalty== is sum of absolute values of coefficients 
+- **L~1~ penalty** is sum of absolute values of coefficients 
 - encourages sparsity by pushing coefficients toward zero (i.e. *feature selection*)

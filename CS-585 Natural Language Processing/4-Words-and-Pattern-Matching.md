@@ -72,8 +72,8 @@ a formal language for specifying text strings
 
 ### Tokenization
 
-- ==Type== is an element of the vocabulary (i.e. the unique words)
-- ==Token== is an instance of a that type in running text
+- **Type** is an element of the vocabulary (i.e. the unique words)
+- **Token** is an instance of a that type in running text
 
 > "they lay back on the San Francisco grass and looked at the stars and their"
 >
@@ -111,13 +111,13 @@ This is greedy algorithm to segment strings with no delimiters
 
 #### Lemmatization
 
-- reduce ==inflections== or variant forms to base form
+- reduce **inflections** or variant forms to base form
   - `am, are, is` → `be`
   - `car, cars, car's, cars'` → `car`
 - this is based on *morphemes* from *morphology*
   - the small meaningful units that make up words
-  - ==stems== are the core meaning-baring units
-  - ==affixes== are bits and pieces that adhere to stems
+  - **stems** are the core meaning-baring units
+  - **affixes** are bits and pieces that adhere to stems
     - usually grammatical functions
 
 #### Stemming

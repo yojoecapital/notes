@@ -1,9 +1,5 @@
 # Monadic Parsing
 
-<span style="color:red">look at [lect11.hs](lectures/src/lect11.hs)</span>
-
-<span style="color:red">note that lecture 12 starts at 1:03:55 of 4/14/23</span>
-
 ```haskell
 data State s a = State { runState :: s -> Maybe (s, a) }
 
@@ -46,7 +42,7 @@ fail :: Parser a
 fail = State $ \_ -> Nothing
 
 char :: Char -> Parser Char
-char c = sat (c ==)
+char c = sat (c **)
 
 string :: String -> Parser String
 string "" = return ""

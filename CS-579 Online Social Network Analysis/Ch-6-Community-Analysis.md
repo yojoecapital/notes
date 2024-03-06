@@ -258,10 +258,6 @@ $$
 \frac{d_j}{\sum_i d_i} = \frac{d_j}{2m}
 $$
 
-
-
- <span style="color:red">finish going over "Ch 6 - Community Analysis I" and "Ch 6 - Community Analysis II"</span>
-
 As an example, this is python code to calculate NMI from Homework 3
 
 - assume circle = 1, cross = 2, triangle = 3
@@ -281,7 +277,7 @@ def nl(x):
 def nhl(x,y):
     c = 0
     for i in range(len(h)):
-        if h[i] == x and l[i] == y:
+        if h[i] ** x and l[i] ** y:
             c = c + 1
     return c
 term1 = sum(nhl(x,y) * math.log2((n * nhl(x,y)) / (nh(x)*nl(y))) for x in h for y in l)
@@ -289,4 +285,5 @@ term2 = sum(nh(x)*math.log2(nh(x)/n) for x in h)
 term3 = sum(nl(y)*math.log2(nl(y)/n) for y in l)
 NMI = term1 / math.sqrt(term2*term3)
 ```
+
 

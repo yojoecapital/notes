@@ -88,12 +88,12 @@
 
 ### Multilabel vs Multiclass
 
-- ==multilabel classification==
+- **multilabel classification**
   - labels are *not* mutually exclusion
   - i.e. a document can be labeled with *multiple labels*
   - probabilities do *not* sum to 1
   - logistic **sigmoid** nonlinearity at output layer
-- ==multiclass classification==
+- **multiclass classification**
   - labels are mutually exclusion
   - probabilities *must* sum to 1
   - **SoftMax** nonlinearity at output layer
@@ -115,7 +115,7 @@
 
 #### Batches, Stochastic Gradient Descent, and Minibatch
 
-- ==batch gradient descent== accumulate updates across entire dataset before applying
+- **batch gradient descent** accumulate updates across entire dataset before applying
   $$
   \theta_{t+1} \leftarrow \theta_t - \eta \sum_{i=1}^{|D|} \nabla \log L(\theta;\vec x_i;y_i)
   $$
@@ -123,14 +123,14 @@
   - where $\eta$ is learning rate
   - **this is slow!**
 
-- ==stochastic gradient descent== update parameters after gradient calculated for each training exemplar 
+- **stochastic gradient descent** update parameters after gradient calculated for each training exemplar 
   $$
   \theta_{t+1} \leftarrow \theta_t - \eta \nabla \log L(\theta;\vec x_i;y_i)
   $$
 
   - **this is fast but a lot less stable**
 
-- ==minibatch== process updates for smaller samples of dataset
+- **minibatch** process updates for smaller samples of dataset
   $$
   \theta_{t+1} \leftarrow \theta_t - \eta \sum_{i=1}^n \nabla \log L(\theta;\vec x_i;y_i)
   $$
@@ -143,7 +143,7 @@
 
 ###  Nonlinearities
 
-- the general constraints on ==nonlinearities== (or *activation functions*) is that they are 
+- the general constraints on **nonlinearities** (or *activation functions*) is that they are 
   - **monotonic** (continuously increasing or decreasing) and 
   - **differentiable** (smooth)
 - the primary nonlinear function used are
@@ -183,9 +183,9 @@
 
 ### Parameters and Hyperparameters
 
-- ==parameters== model-internal values that are set through training in order to optimize against some loss function
+- **parameters** model-internal values that are set through training in order to optimize against some loss function
   - examples: word embeddings, weight matrices between network layers
-- ==hyperparameters== model architecture or optimization decisions that are fixed in advance of training
+- **hyperparameters** model architecture or optimization decisions that are fixed in advance of training
   - examples: learning rate $\eta$, number of hidden layers, number of nodes per layer, regularization hyperparameters
 
 ### Hyperparameters in neural networks
@@ -200,16 +200,16 @@
 
 ### Regularization in neural networks
 
-- ==regularization== discouraging or regulating model complexity
-- especially important for neural networks due to the ==curse of dimensionality==
+- **regularization** discouraging or regulating model complexity
+- especially important for neural networks due to the **curse of dimensionality**
   - in a high-dimensional space, there are many possible parameterizations (decision surfaces) that have equivalent performance according to our loss function
 
-- ==L~1~ / L~2~ penalties== from logistic regression are used in neural networks as well
+- **L~1~ / L~2~ penalties** from logistic regression are used in neural networks as well
   - different regularization penalties maybe associated with weights at different layers
-- another regularization technique is ==early stopping==
+- another regularization technique is **early stopping**
   - halting training before the loss has been fully minimized
   - monitor performance on development dataset
-- ==dropout== is a regularization technique specific to neural networks 
+- **dropout** is a regularization technique specific to neural networks 
   - during training, a **fixed percentage** of outputs at each layer are randomly set to 0
   - this introduces noise into the inputs of the next layer, discouraging large weights
   - also discourages *co-adaption* nodes in a later that jointly perform a single function that can cause training to stall in a local minimum

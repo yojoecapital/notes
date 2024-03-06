@@ -8,12 +8,12 @@
 
 ## Predicate-Argument Structure and Semantic Roles
 
-- ==predicates== bear the central meaning of a situation expressed by a text
+- **predicates** bear the central meaning of a situation expressed by a text
   - usually verbs or verbal nouns ("bought", "purchase")
-- ==arguments== phrases that fill meaning slots of a situation expressed by a predicate, define its essential details
+- **arguments** phrases that fill meaning slots of a situation expressed by a predicate, define its essential details
   - answers questions like "who?", "did what?", "to whom?"
   - usually nouns or noun phrases ("stock", "XYZ corporation")
-- ==semantic roles== express the abstract role that *arguments* of a predicate can take in the event 
+- **semantic roles** express the abstract role that *arguments* of a predicate can take in the event 
   - similar to a generalization of the arguments 
   - the semantic role of the "XYZ corporation" is the "Buyer"
 
@@ -33,7 +33,7 @@
   - often animate
   - direct causal responsibility for their events
 
-- ==thematic roles== are a way to capture this semantic commonality 
+- **thematic roles** are a way to capture this semantic commonality 
 
   - they both have the role of `AGENT`
 
@@ -69,12 +69,12 @@
 - corpus of sentences annotated by role
 - English PropBank: annotated on **Penn Treebank**
 - roles:
-  - ==Proto-Agent==
+  - **Proto-Agent**
     - volitional (by one's will) involvement in event or state
     - sentience (and / or perception)
     - causes an event or change of state in another participant
     - movement (relative to position of another participant)
-  - ==Proto-Patient==
+  - **Proto-Patient**
     - undergoes change of state
     - causally affected by another participant 
     - stationary relative to movement of another participant
@@ -99,7 +99,7 @@
   - evoked by lexical units
     - usually verbs but not always
   - include **frame elements** (similar concept to roles)
-- ==FrameNet==
+- **FrameNet**
   - lexicon of \~1000 frames
   - courpus of \~200K annotated sentences that use those frames
   - groups verbs into frames

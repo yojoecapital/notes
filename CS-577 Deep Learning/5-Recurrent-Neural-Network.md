@@ -4,7 +4,7 @@
 
 ## 1-of-N Encoding
 
-- ==1-of-N encoding== is a way to represent a word as a vector
+- **1-of-N encoding** is a way to represent a word as a vector
 - a lexicon is set of vocabulary 
   - $\text{lexicon} = \{\text{apple},\text{bag},\text{cat},\text{dog},\text{elephant}\}$
 - our vector is the size of our lexicon where each dimension corresponds to a word 
@@ -135,7 +135,7 @@ $$
 
 <img src="images/image-20231010161711949.png" alt="image-20231010161711949" style="zoom:33%;" />
 
-- the solution is to use ==clipping==
+- the solution is to use **clipping**
   - where we have a threshold so if the gradient is very large, we cut it off and let it repeat again
 
 <img src="images/image-20231010161757905.png" alt="image-20231010161757905" style="zoom:33%;" />

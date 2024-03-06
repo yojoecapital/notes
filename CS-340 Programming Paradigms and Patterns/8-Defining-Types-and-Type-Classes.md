@@ -6,15 +6,15 @@
 data Shape = Cirle Float Float Float
 ```
 
-1. `Shape` is a ==type==
-2. `Circle` is a ==value constructor==
-3. `Float Float Float` are all ==fields== of value constructor `Circle`
+1. `Shape` is a **type**
+2. `Circle` is a **value constructor**
+3. `Float Float Float` are all **fields** of value constructor `Circle`
 
 ```haskell
 data Maybe a = Nothing | Just a
 ```
 
-1. `Maybe` is *not a type*, it is ==type constructor== with a ==type parameter== `a`
+1. `Maybe` is *not a type*, it is **type constructor** with a **type parameter** `a`
 2. `Nothing` is a value constructor
 3. `Just` is a value constructor with the field of type `a`
 
@@ -22,10 +22,10 @@ data Maybe a = Nothing | Just a
 
 ```haskell
 class Eq a where  
-    (==) :: a -> a -> Bool  
+    (**) :: a -> a -> Bool  
     (/=) :: a -> a -> Bool  
-    x == y = not (x /= y)  
-    x /= y = not (x == y) 
+    x ** y = not (x /= y)  
+    x /= y = not (x ** y) 
 ```
 
 - `class` is for defining new typeclasses
@@ -33,10 +33,10 @@ class Eq a where
 ```haskell
 data TrafficLight = Red | Yellow | Green  
 instance Eq TrafficLight where  
-    Red == Red = True  
-    Green == Green = True  
-    Yellow == Yellow = True  
-    _ == _ = False  
+    Red ** Red = True  
+    Green ** Green = True  
+    Yellow ** Yellow = True  
+    _ ** _ = False  
 ```
 
 - `instance` is for making our types instances of typeclasses
@@ -58,7 +58,7 @@ distance (x1,y1) (x2,y2) = sqrt $ (x1-x2)^2 + (y1-y2)^2
 
 ## Algebraic Data Types
 
-The `data` keyword is used to define new ==types==. A type definition requires one or more ==value constructors== (aka data constructors).
+The `data` keyword is used to define new **types**. A type definition requires one or more **value constructors** (aka data constructors).
 
 ```haskell
 data Bool = False | True
@@ -75,7 +75,7 @@ not' Yes = No
 not' No = Yes
 ```
 
-In a type definition, value constructors may be followed by ==field types==.
+In a type definition, value constructors may be followed by **field types**.
 
 > Consider the following type (note that type names and value constructor names can be the same):
 
@@ -175,7 +175,7 @@ s3 = s1 { grades = ['B', 'A', 'D'] }
 data Maybe a = Nothing | Just a  
 ```
 
-- `Maybe` is not a type but a ==type constructor== as a ==type parameter== `a` is involved
+- `Maybe` is not a type but a **type constructor** as a **type parameter** `a` is involved
 
 ```haskell
 {-ghci>-} :t Just "Haha"
@@ -186,7 +186,7 @@ data Maybe a = Nothing | Just a
 {->>-} Myabe a
 ```
 
-- Notice that the type of `Nothing` is `Maybe a` meaning it can act as `Maybe Int` or `Maybe String` or anything; i.e. it is ==polymorphic==
+- Notice that the type of `Nothing` is `Maybe a` meaning it can act as `Maybe Int` or `Maybe String` or anything; i.e. it is **polymorphic**
   - This is similar to how `5` can act like an `Int` or a `Double`
   - Or how an empty list is of type `[a]` which can act as a list of anything
 
@@ -197,8 +197,8 @@ data Maybe a = Nothing | Just a
 {->>-} Int :: *  
 ```
 
-- the *kind* of `Int` is `*` which denotes that it is a ==concrete type==
-- the *kind* of `Maybe` is `* -> *` which denotes that it is a ==type constructor== such that it takes one *concrete type* and returns a new *concrete type* (just like how a function takes one value and returns a new value)
+- the *kind* of `Int` is `*` which denotes that it is a **concrete type**
+- the *kind* of `Maybe` is `* -> *` which denotes that it is a **type constructor** such that it takes one *concrete type* and returns a new *concrete type* (just like how a function takes one value and returns a new value)
 
 ## Self Referential Types
 
@@ -227,7 +227,7 @@ reverseMessages d = rev d EmptyDoll
 ## Typeclasses
 
 - defines some behavior (like comparing for equality or for ordering)
-- types that can behave in that way are are made instances of that ==typeclass==
+- types that can behave in that way are are made instances of that **typeclass**
 - the behavior of typeclasses is achieved by defining functions or just type declaration that we then implement
 - classes in Haskell are not akin to classes in imperative languages
 
@@ -235,34 +235,34 @@ reverseMessages d = rev d EmptyDoll
 -- this is how the Eq class is defined in the prelude
 class Eq a where 
 -- "a" is a type variable
-    (==) :: a -> a -> Bool  
+    (**) :: a -> a -> Bool  
     (/=) :: a -> a -> Bool  
-    x == y = not (x /= y)  
-    x /= y = not (x == y)  
+    x ** y = not (x /= y)  
+    x /= y = not (x ** y)  
 ```
 
 ### Using Instances of Typeclasses
 
-- You can use ==deriving== such as with
+- You can use **deriving** such as with
 
 ```haskell
 data TrafficLight = Red | Yellow | Green deriving (Show, Eq)
 ```
 
 - This will allow the `TrafficLight` type to use the functions of `Show` and `Eq`
-- Or we can use ==instance== to redefine how the `Eq` functions are implemented
+- Or we can use **instance** to redefine how the `Eq` functions are implemented
 
 ```haskell
 data TrafficLight = Red | Yellow | Green  
 instance Eq TrafficLight where
 -- "TrafficLight" replaces the role of "a" in the class definition of "Eq"
-    Red == Red = True  
-    Green == Green = True  
-    Yellow == Yellow = True  
-    _ == _ = False
+    Red ** Red = True  
+    Green ** Green = True  
+    Yellow ** Yellow = True  
+    _ ** _ = False
 ```
 
-- To fulfil the minimal complete definition of `Eq` we have to implement either `==` or `/=` as they are mutually defined
+- To fulfil the minimal complete definition of `Eq` we have to implement either `**` or `/=` as they are mutually defined
 - Note that we can define `Eq` with only the type declarations of its functions
 
 ### Class Constraints in Typeclasses
@@ -275,12 +275,13 @@ This specifies that `a` must be an instance of `Eq` before it can be made an ins
 
 ```haskell
 instance (Eq m) => Eq (Maybe m) where  
-	Just x == Just y = x == y  
-    Nothing == Nothing = True  
-    _ == _ = False  
+	Just x ** Just y = x ** y  
+    Nothing ** Nothing = True  
+    _ ** _ = False  
 ```
 
 - Note that because `Maybe` is a *type constructor* and *not a type*, we can't do `instance Eq Maybe where`
-- To ensure that the type parameter `m` of `Maybe` is a `Eq` instance, we use a class constraint; otherwise, we can't use `==` or `/=` on `Maybe m` type
+- To ensure that the type parameter `m` of `Maybe` is a `Eq` instance, we use a class constraint; otherwise, we can't use `**` or `/=` on `Maybe m` type
 
 > Note that if you want to see the instances of a typeclass, use `:info YourTypeClass` in GHCI
+

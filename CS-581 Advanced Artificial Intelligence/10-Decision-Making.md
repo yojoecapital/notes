@@ -196,11 +196,11 @@ $$
 - $P(s'|s,a)$ is probability of arriving at state $s'$ given we are at state $s$ and take action $a$
 - $R(s,a,s')$ is the reward the agent gets when it transitions from $s$ to $s'$ with $a$
 - $\pi(s)$ is the action recommendation by policy $\pi$ at $s$
-- $\pi^*$ is the ==optimal policy==
+- $\pi^*$ is the **optimal policy**
 - $U^\pi(S)$ is the expected utility obtained via executing policy $\pi$ at state $s$
 - $U^{\pi^*}(s)$ is often referred to as $U(s)$
 - $Q(s,a)$ is the expected utility of taking $a$ at $s$
-- $\gamma$ is the ==discount factor== $[0,1]$
+- $\gamma$ is the **discount factor** $[0,1]$
 
 #### Discount Factor
 
@@ -232,7 +232,7 @@ $$
 ### Utility of States
 
 - The agents gets a reward at each state
-- ==Utility== of a state $s$ given a policy $\pi$ is the expected reward that the agent will get started from state $s$ and taking actions according to policy $\pi$
+- **Utility** of a state $s$ given a policy $\pi$ is the expected reward that the agent will get started from state $s$ and taking actions according to policy $\pi$
 - Let $S_t$ denote the state the agent reaches at time $t$
 
 > Note that utility (long-term cumulative) is different from short-term immediate reward $R(s,a,s')$
@@ -371,4 +371,5 @@ Q(A, a_1) = 0.4(4+\gamma U(A)) + 0.6(5+\gamma U(B)) \\
 Q(A,s_2) = 0.4(4+\gamma U(A)) + 0.7(6+\gamma U(C)) \\
 U^{\pi^*}(A) = \max_{a\in \{a_1,a_2\}}\sum P(s'|A,a)*[R(A,a,s') + \gamma U^{\pi^*}(s')]
 $$
+
 

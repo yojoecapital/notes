@@ -37,7 +37,7 @@
 
 > Source Data & Target Data is Labeled
 
--  task description: ==one-shot learning== means that our data looks like
+-  task description: **one-shot learning** means that our data looks like
   - source data: ($x^s,y^s$) **very large amount**
   - target data: ($x^t,y^t$) **very little** 
 - example: (supervised) speaker adaptation
@@ -129,4 +129,5 @@
   - note we need sufficient attributes to represent each class uniquely
 - in training, we predict the attributes instead of the class
   <img src="images/image-20231206050112293.png" alt="image-20231206050112293" style="zoom:50%;" />
+
 

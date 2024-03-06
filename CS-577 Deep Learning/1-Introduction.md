@@ -32,7 +32,7 @@
 <img src="images/image-20230829151536304.png" alt="image-20230829151536304" style="zoom:50%;" />
 
 - different connections leads to different network structures
-- ==network parameter $\theta$== is all the weights and biases in the neurons
+- **network parameter $\theta$** is all the weights and biases in the neurons
 
 ### Fully Connected Feedforward Network
 
@@ -50,7 +50,7 @@ classDef inv fill: #ffffff00, stroke: #ffffff00
 - the input value in the `sigmoid` neuron is 4
 - $(1 \times 1) + (-1 \times -2) + (1) = 4$
 - or the sum of the dot product of the input features and their weights plus the bias
-- as shown, we can define a ==function set== given a network structure based on the possible values for $\theta$
+- as shown, we can define a **function set** given a network structure based on the possible values for $\theta$
 
 ### Neural Network as a Matrix Operation
 
@@ -118,4 +118,5 @@ $$
   - e.g. Evolutionary Artificial Neural Networks
 - can we design the network structure?
   - e.g. Convolutional Neural Network 
+
 

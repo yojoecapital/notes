@@ -16,7 +16,7 @@ flowchart TB
 	gt -- yes --> d("😊")
 ```
 
-*Usually* getting bad results on testing data indicates ==overfitting==.
+*Usually* getting bad results on testing data indicates **overfitting**.
 
 <img src="images/image-20230928135939910.png" alt="image-20230928135939910" style="zoom:50%;" />
 
@@ -27,7 +27,7 @@ flowchart TB
 <img src="images/image-20230919143632471.png" alt="image-20230919143632471" style="zoom:50%;" />
 
 - notice that in this situation, the training data accuracy drops as we add more layers (get deeper)
--  the issue maybe a result of ==Vanishing Gradient Problem==
+-  the issue maybe a result of **Vanishing Gradient Problem**
 
 #### Vanishing Gradient Problem
 
@@ -46,7 +46,7 @@ flowchart TB
 
 ##### ReLU
 
-- to solve the [Vanishing Gradient Problem](#Vanishing Gradient Problem), we can use the Rectified Linear Unit function ==ReLU== instead of sigmoid for our activation function
+- to solve the [Vanishing Gradient Problem](#Vanishing Gradient Problem), we can use the Rectified Linear Unit function **ReLU** instead of sigmoid for our activation function
 
 <img src="images/image-20230919144850408.png" alt="image-20230919144850408" style="zoom:50%;" />
 

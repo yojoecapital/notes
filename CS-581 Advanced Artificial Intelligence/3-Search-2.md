@@ -155,3 +155,4 @@ $$
 * $w_i$ and $n_i$ are the wins and playouts for a node
 * $N_i$ is the playouts for the parent node
 * $C$ is the exploration parameter (theory says its should be $\sqrt{2}$ but many use $1.4$)
+

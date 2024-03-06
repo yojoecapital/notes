@@ -5,7 +5,7 @@
 ## 0/1 Error & Accuracy
 
 - The simplest measure is "is the prediction correct?"
-- Given a dataset, ==accuracy== is the percentage of objects the model's prediction are for 
+- Given a dataset, **accuracy** is the percentage of objects the model's prediction are for 
 
 > ###### Problems
 >
@@ -17,8 +17,8 @@
 
 - Assume a target / positive class
   - `spam`, `has_heart_disease`, `approved`
-- ==False Positive== is when you misclassify an object as positive (type I error)
-- ==False Negative== is when you misclassify an object as negative (type II error)
+- **False Positive** is when you misclassify an object as positive (type I error)
+- **False Negative** is when you misclassify an object as negative (type II error)
 
 ## Confusion Matrix and Important Measurements
 
@@ -29,20 +29,20 @@ $$
 \text{F1} = \frac{2*\text{Precision}*\text{Recall}}{\text{Precision}+\text{Recall}}
 $$
 
-- ==Accuracy== measures overall performance of the model
-- ==Precision== measures how accurate the the positive predictions are
-- ==Recall== measures how well the model is able to identify positive observations
-- ==F1 score== provides a single metric to evaluate the model's performance that balances precision and recall 
+- **Accuracy** measures overall performance of the model
+- **Precision** measures how accurate the the positive predictions are
+- **Recall** measures how well the model is able to identify positive observations
+- **F1 score** provides a single metric to evaluate the model's performance that balances precision and recall 
 
 ##  Area Under the Curve AUC 
 
 - instead of using a threshold (where if probability is more than say 0.5, the instance is labeled positive), assume the classifier orders instances by how likely they are to be positive
 - so if we know there are 10 positive cases in the data, we can take the first 10 in the ordering as positive and the rest as negative
-- to calculate ==AUC==, plot the ROC curve and compute the area
+- to calculate **AUC**, plot the ROC curve and compute the area
 
 For example, if our rankings are `[P, P, N, P, N, P, N, N]`, the AUC is as such:
 
-<span style="color:red">this is drawn incorrectly, but `P` goes up by `1 / total` and `N` to the right</span>
+<span style="color:red">This is drawn incorrectly, but `P` goes up by `1 / total` and `N` to the right.</span>
 
 
 ![img](images/img.png)
@@ -84,12 +84,12 @@ $$
 ## Sample
 
 - When the space is very large, we sample from $P(x)$
-- When $P(x)$ is not known or not possible, we collect a ==representative sample==
+- When $P(x)$ is not known or not possible, we collect a **representative sample**
 - Let $\mathcal D \sim P(x)$ be a representative sample
 
-> ==True Mean== $\sum_{x\sim\bf X}P(x)x$
+> **True Mean** $\sum_{x\sim\bf X}P(x)x$
 >
-> ==Sample Mean== $\frac{1}{|\mathcal D|}\sum_{x\in\mathcal D}x$
+> **Sample Mean** $\frac{1}{|\mathcal D|}\sum_{x\in\mathcal D}x$
 
 For example, if the space of possibilities of $\bf X$ is either 3 (40% of the time) and 5 (60% of the time)
 then our sample should be made up of about 40% 3's and 60% 5's
@@ -127,6 +127,7 @@ $$
 
 ### Cross-Validation
 
-- Also known as a ==k-fold==
+- Also known as a **k-fold**
 - Split your data into $k$ disjoint sets
 - Each time, one set is the test, the rest is train
+

@@ -45,8 +45,8 @@
 ##### Likelihood / Log-Likelihood
 
 - number of heads is $a$, number of tails is $b$
-- ==likelihood== $\mathcal L(\theta :\mathcal D)=\theta^a (1-\theta)^b$
-- ==log-likelihood== $l(\theta: \mathcal D) = a\log\theta + b\log(1-\theta)$
+- **likelihood** $\mathcal L(\theta :\mathcal D)=\theta^a (1-\theta)^b$
+- **log-likelihood** $l(\theta: \mathcal D) = a\log\theta + b\log(1-\theta)$
 - note that they're maximized by same $\theta$
 - take derivative of $l(\theta:\mathcal D)$ with respect to $\theta$ & set to 0
 
@@ -112,8 +112,6 @@ $$
 
   - $\theta \sim \text{Dirichlet}(\alpha_1,...,\alpha_K)$ if $P(\theta) \propto \prod_{k=1}^K \theta _k^{\alpha_k -1}$
 
-- <span style="color:red">???</span>
-
   <img src="images/image-20231016160028052.png" alt="image-20231016160028052" style="zoom:50%;" />
 
 ##### Bayes Classifier
@@ -178,11 +176,11 @@ $$
 
 ##### Naive Bayes Implementations
 
-- ==Bernoulli / categorical naive bayes==
+- **Bernoulli / categorical naive bayes**
   - features are assumed be binary / categorical
-- ==Multinomial naive bayes==
+- **Multinomial naive bayes**
   - $P(X|y)$ is multinomial distribution
-- ==Gaussian naive bayes==
+- **Gaussian naive bayes**
   - each $p(x_i|y)$ is Gaussian distribution 
 
 ---
@@ -257,4 +255,5 @@ $$
 \nabla_w f_\text{CE}(Y,\hat Y;W) = \frac1n X(\hat Y-Y)
 $$
 
-- where we ==one-hot encode== $Y$
+- where we **one-hot encode** $Y$
+

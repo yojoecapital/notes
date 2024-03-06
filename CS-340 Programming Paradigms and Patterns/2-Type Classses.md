@@ -10,7 +10,7 @@
 :i Eq
 >> type Eq :: * -> Constraint
 >> class Eq a where
->>   (==) :: a -> a -> Bool  
+>>   (**) :: a -> a -> Bool  
 >>   (/=) :: a -> a -> Bool 
 -- the 'equitable' class
 :i Ord

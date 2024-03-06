@@ -24,10 +24,10 @@ $$
 ## Sampling
 
 - when space is large, sample from $P(x)$
-- when $P(x)$ is not known, or its possible to sample, collect a ==representative sample==
+- when $P(x)$ is not known, or its possible to sample, collect a **representative sample**
 - let $\mathcal D \sim P(x)$ be a representative sample
-  - ==True Mean==: $\sigma_{x\sim\mathcal X}(P(x)\times x)$
-  - ==Sample Mean==:  $\frac{1}{|\mathcal D|}\sigma_{x\in\mathcal D}(x)$
+  - **True Mean**: $\sigma_{x\sim\mathcal X}(P(x)\times x)$
+  - **Sample Mean**:  $\frac{1}{|\mathcal D|}\sigma_{x\in\mathcal D}(x)$
 
 ### Sample Error
 
@@ -60,7 +60,7 @@ $$
 ## Accuracy
 
 - the simplest measure is "is the prediction correct?"
-- ==accuracy== percentage of objects the model's predictions are correct for
+- **accuracy** percentage of objects the model's predictions are correct for
 
 $$
 f_A = \frac 1 n \sum_{i=1}^n I[y_i = \hat y_i]
@@ -84,8 +84,8 @@ $$
 
 - first, assume a positive class (a target)
   - for example, the label spam is our positive class
-- ==False Positive==: falsely classifying an object as positive (a.k.a. *Type I* error)
-- ==False Negative==: falsely classifying an object as negative (a.k.a. *Type II* error)
+- **False Positive**: falsely classifying an object as positive (a.k.a. *Type I* error)
+- **False Negative**: falsely classifying an object as negative (a.k.a. *Type II* error)
 
 |                                      |      | Predicted Class |                |
 | -----------------------------------: | ---: | :-------------: | :------------: |
@@ -142,7 +142,7 @@ $$
 - given a probabilistic output for an object, say $\textlangle p, 1-p \textrangle $, how do we decide which class to assign?
 - simplistic approach is to check if $p>0.5$ and assign accordingly
 - this assumes FP and FN are equally costly
-- we can change the ==decision threshold== in cases that FP and FN are different costs
+- we can change the **decision threshold** in cases that FP and FN are different costs
 
 ### Cost Matrix
 
@@ -173,7 +173,7 @@ Given a model and a dataset, move down the decision threshold and plot the new T
 
 ![image-20230831125526319](images/image-20230831125526319.png)
 
-The better your model is, the closer the ==AUC== (Area Under the Curve) is to 1
+The better your model is, the closer the **AUC** (Area Under the Curve) is to 1
 
 <hr>
 
@@ -182,7 +182,7 @@ The better your model is, the closer the ==AUC== (Area Under the Curve) is to 1
 <img src="images/image-20230831130544827.png" alt="image-20230831130544827" style="zoom:50%;" />
 
 - in classification problems, the target $Y$ is discrete
-- when $Y$ is continuous, the task is ==regression==
+- when $Y$ is continuous, the task is **regression**
 
 ### Regression Error
 
@@ -287,8 +287,8 @@ $$
 
 In case the dataset is imbalanced, there are some strategies for better sampling:
 
-1. ==Stratified Cross Validation== splitting the dataset into folds while preserving the original class distribution in each fold
-2. ==Weighted Sampling== increases the importance of classes with smaller number of experiments (this can be done by repeating objects across multiple samples)
+1. **Stratified Cross Validation** splitting the dataset into folds while preserving the original class distribution in each fold
+2. **Weighted Sampling** increases the importance of classes with smaller number of experiments (this can be done by repeating objects across multiple samples)
 
 <img src="images/image-20230831141527851.png" alt="image-20230831141527851" style="zoom:67%;" />
 
@@ -317,3 +317,4 @@ In case the dataset is imbalanced, there are some strategies for better sampling
 | ![image-20230831144403781](images/image-20230831144403781.png) | ![image-20230831144413317](images/image-20230831144413317.png) |
 
 <img src="images/image-20230831144708543.png" alt="image-20230831144708543" style="zoom: 33%;" />
+

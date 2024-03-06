@@ -11,8 +11,8 @@
 ### HMM - POS generation
 
 - first-order (bigram) Markov assumptions:
-  - ==limited horizon== tag depends only on previous tag
-  - ==time invariance== no change over time
+  - **limited horizon** tag depends only on previous tag
+  - **time invariance** no change over time
 
 ###  HMM - word generation
 
@@ -50,5 +50,6 @@
   3. compute maximum likelihood model: $\underset{m}{\text{argmax }}P_m(W_{1,N})$
      - finding model parameters to maximize $P_m(W_{1,N})$
 
-<span style="color:red">Too compliated for me :cry:</span>
+<span style="color:red">Too compliated for me 🥲</span>
+
 

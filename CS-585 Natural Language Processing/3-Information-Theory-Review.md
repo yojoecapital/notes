@@ -12,7 +12,7 @@
 
 ## Information Content
 
-- the ==information content== or optimal code length of an event drawn from a uniform (equiprobable) distribution with $N$ outcomes is
+- the **information content** or optimal code length of an event drawn from a uniform (equiprobable) distribution with $N$ outcomes is
 
 $$
 -\log_2 \frac{1}{N} = \log_2 N \text{ bits}  
@@ -34,7 +34,7 @@ $$
 ## Entropy of a Random Variable
 
 - refer to [cross-entropy](#cross-entropy) for the definition in terms of NLP
-- ==entropy== (self-information) of a RV is
+- **entropy** (self-information) of a RV is
 
 $$
 H(X) = H(P(X)) = - E[\log_2P(X)] \\= -\sum_{x\in X}P(X=x)\log_2P(X=x)
@@ -95,7 +95,7 @@ $$
 ## Huffman coding
 
 - based on binary tree
-- builds ==prefix-code==:
+- builds **prefix-code**:
   - no code is a prefix of any other code
   - allows for variable-length code
 - for example, our single die example that uses $2.58$ bits can be encoded as
@@ -113,8 +113,8 @@ $$
 
 ##  Cross-Entropy
 
-- if ==entropy== is the information in bits required to represent a message using an optimal encoding derived from the **true** distribution $P$
-- then ==cross-entropy== is the information in bits required to represent a message using an optimal encoding derived from an **different** distribution $Q$
+- if **entropy** is the information in bits required to represent a message using an optimal encoding derived from the **true** distribution $P$
+- then **cross-entropy** is the information in bits required to represent a message using an optimal encoding derived from an **different** distribution $Q$
 - cross-entropy is always the **upper-bound** on the entropy
 - the cross-entropy between 2 distributes $P,Q$ (where $Q$ is often a *model* of the true distribution $P$) is
 
@@ -144,7 +144,7 @@ $$
 $$
 
 - where $n$ is the length of the sequence 
-- ==perplexity== is the inverse of the probability of the sequence under the model
+- **perplexity** is the inverse of the probability of the sequence under the model
 
 ## Conditional Entropy
 
@@ -157,7 +157,7 @@ $$
 
 ## Mutual Information
 
-- the difference between the entropy $H(X)$ and the conditional entropy $H(X|Y)$ is called the ==mutual information== between the 2 random variables
+- the difference between the entropy $H(X)$ and the conditional entropy $H(X|Y)$ is called the **mutual information** between the 2 random variables
 
 $$
 I(X;Y) = H(X) - H(X|Y)
@@ -186,7 +186,7 @@ $$
 ### KL Divergence
 
 - the solution to the [above](#Distributional-Similarity-Measures) is to measure the incremental encoding length rather than the encoding length directly
-- Kullback-Leibler or ==KL divergence== is the cross-entropy minus the entropy of the distribution to be encoded
+- Kullback-Leibler or **KL divergence** is the cross-entropy minus the entropy of the distribution to be encoded
 
 $$
 D_{KL}(P(X)||Q(X))\\ = H(P(X),Q(X))-H(P(X)) \\
@@ -214,14 +214,14 @@ $$
 ###  JS Divergence
 
 - as mention KL divergence is not symmetric
-- a commonly-used symmetric measure of distributional distance is the Jense-Shannon or ==JS divergence==
+- a commonly-used symmetric measure of distributional distance is the Jense-Shannon or **JS divergence**
 
 $$
 M(X) = \frac{(P(X)+Q(X))}2 \leftarrow \text{Mixture Distribution}\\
 D_{JS}(P(X)||Q(X))= \frac{D_{KL}(P(X)||M(X)) + D_{KL}(Q(X)||M(X))}2
 $$
 
-- why can't we use $\frac{D_{KL}(P||Q)+D_{KL}(Q||P)}2$? <span style="color:red">idk</span> 
+- why can't we use $\frac{D_{KL}(P||Q)+D_{KL}(Q||P)}2$? <span style="color:red">Good question...</span> 
 
 #### JS Divergence Example
 
@@ -239,6 +239,7 @@ D_{KL}(Q||M) = -\sum_{x\in X}Q(X=x)(\log_2 \frac{M(X=x)}{Q(X=x)})\\
 D_{JS} = \frac{D_{KL}(P||M)+D_{KL}(Q||M)}2 \\
 = 0.75
 $$
+
 
 
 

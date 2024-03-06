@@ -134,14 +134,14 @@
 
 ## Return and Value Function
 
-- ==horizon== $H$
+- **horizon** $H$
   - number of time steps in each episode
   - can be infinite
   - other called finite Markov reward process
-- ==return== $G_t$
+- **return** $G_t$
   - discounted sum of rewards from time step $t$ to horizon $H$
   - ![image-20231206095131241](images/image-20231206095131241.png)
-- ==State Value Function== $V(s)$
+- **State Value Function** $V(s)$
   - expected return from starting in state $s$
   - ![image-20231206095202898](images/image-20231206095202898.png)
 

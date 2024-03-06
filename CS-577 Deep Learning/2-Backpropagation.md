@@ -73,3 +73,4 @@ $$
 \frac{\partial l}{\partial z_2} = \frac{\partial y_2}{\partial z_2} \frac{\partial l}{\partial y_2}
 $$
 
+

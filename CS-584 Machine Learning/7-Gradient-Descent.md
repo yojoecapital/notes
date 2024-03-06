@@ -32,11 +32,11 @@ $$
 
 - what property ensures existence of only one local minimum
   - from left to right, the slope of function never decreases
-  - meaning ==second derivative== (derivative of slope) is always *non-negative* $\frac{d^2f}{dw^2} \ge 0$
+  - meaning **second derivative** (derivative of slope) is always *non-negative* $\frac{d^2f}{dw^2} \ge 0$
 
 #### Convexity in Higher Dimensions 
 
-- determined by second derivative matrix, ==Hessian== $H$
+- determined by second derivative matrix, **Hessian** $H$
   - square matrix of 2nd order partial derivatives combinations
 
 $$
@@ -52,7 +52,7 @@ $$
 
 ##### Positive Semi-Definite PSD
 
-- a real symmetric matrix $X$ is ==PSD== if
+- a real symmetric matrix $X$ is **PSD** if
   - all its [eigenvalues](https://lpsa.swarthmore.edu/MtrxVibe/EigMat/MatrixEigen.html) are non-negative
   - for every vector $z$, $z^\top Xz \ge 0$
 
@@ -74,7 +74,7 @@ $$
 
 ## Gradient Descent
 
-- ==gradient descent== is a hill-climbing algorithm that makes incremental changes to weight vector $w$ depending on the value of gradient (i.e. slope)
+- **gradient descent** is a hill-climbing algorithm that makes incremental changes to weight vector $w$ depending on the value of gradient (i.e. slope)
 
 ### Gradient of MSE
 
@@ -101,4 +101,5 @@ $$
 > $$
 > |f(w^{(t)}) - f(w^{(t-1)})| < \delta
 > $$
+
 

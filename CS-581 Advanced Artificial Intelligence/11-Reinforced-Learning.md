@@ -11,8 +11,8 @@
 
 ## Prediction and Control
 
-- ==Prediction== given a policy, estimate a value function
-- ==Control== learn the optimal policy
+- **Prediction** given a policy, estimate a value function
+- **Control** learn the optimal policy
 
 <hr/>
 
@@ -24,7 +24,7 @@
   - transition probabilities are unknown
   - reward function is unknown
 - Learn from *experience* - sample of episodes
-- ==Episode== a sequence of state, action, reward triplets
+- **Episode** a sequence of state, action, reward triplets
 - Assume all episodes reach a terminal state
 - Basic idea: expectation = average over samples
 
@@ -41,14 +41,14 @@
 
 - If $s$ appears multiple times in a single episode (i.e. loops): 
 
-  - ==First-visit MC== for each episode, only the first appearance of the state $s$ is considered
+  - **First-visit MC** for each episode, only the first appearance of the state $s$ is considered
 
     > - $A, \pi(A), R_1; B, \pi(B), R_2; B, \pi(B), R_3; C, \pi(C), R_4...$
     > - for this example to find $G(B)$, we take $R_2+\gamma R_3+\gamma^2R_4...$
     > - (i.e. sum from where the state $B$ first appears)
     > - $V(B)$ is the average of $G(B)$ across all sampled episodes
 
-  - ==Every-visit MC== every appearance is considered and averaged accordingly
+  - **Every-visit MC** every appearance is considered and averaged accordingly
 
 ### MC Prediction - Q Function
 
@@ -70,7 +70,7 @@
 
 - in MC, each episode needed to end at a terminal state
 - MC ignored [Bellman equations](10-Decision-Making.md#Bellman-Equation)
-- ==Temporal Diffrence== TD learning can learn from partial episodes
+- **Temporal Diffrence** TD learning can learn from partial episodes
 
 ### TD(0) Prediction
 
@@ -79,7 +79,7 @@
   - MC
     - $V(S_t) \coloneqq V(S_t)+\alpha[G_t-V(S_t)]$
     - Need to wait till the end to calculate $G_t$
-  - ==TD(0)== take one step and use Bellman equation
+  - **TD(0)** take one step and use Bellman equation
     - $V(S_t) \coloneqq V(S_t)+\alpha[R_{t+1}+\gamma V(S_{t+1})-V(S_t)]$
 - This is called TD(0) because it updates values based on a single look ahead
 
@@ -129,8 +129,8 @@
 ## Model-Free Control
 
 - Predicition is cool and all, but not so useful if you're trying to come up with a policy :thinking:
-- ==On-policy control== you are learning from you current policy and trying to improve
-- ==Off-policy control== someone else makes the moves, you observe them, and learn from their experience
+- **On-policy control** you are learning from you current policy and trying to improve
+- **Off-policy control** someone else makes the moves, you observe them, and learn from their experience
   - kind of a a generalization of on-policy as on-policy you are observing *your* own policy
 
 ### On-Policy Control
@@ -167,6 +167,7 @@
 - Like TD Control, but
 - $Q(S,A) \coloneqq Q(S,A) + \alpha[R+\gamma \max_aQ(S',a) - Q(S,A)]$
 - (i.e. instead of SARSA, we use SARS)
+
 
 
 

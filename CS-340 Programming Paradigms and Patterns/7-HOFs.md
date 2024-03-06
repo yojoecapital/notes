@@ -40,8 +40,8 @@ infixr 9 .
 
 ```haskell
 even' :: Integral a => a -> Bool
---even' x = 0 == (x `rem` 2)
-even' = (== 0) . (`rem` 2)
+--even' x = 0 ** (x `rem` 2)
+even' = (** 0) . (`rem` 2)
 ```
 
 - which now even' returns a function which takes an `Integral` that goes into the composition  
@@ -127,7 +127,7 @@ sort (x:xs) = sort [y | y <- xs, y < x]
 
 sortBy :: (a -> a -> Ordering) -> [a] -> [a]
 sortBy _ [] = []
-sortBy cmp (x:xs) = sortBy cmp [y | y <- xs, cmp x y == LT] 
+sortBy cmp (x:xs) = sortBy cmp [y | y <- xs, cmp x y ** LT] 
                         ++ [x] 
                         ++ sortBy cmp [y | y <- xs, cmp x y /= LT]
 ```
@@ -258,4 +258,5 @@ Here is a trace of `foldl (+) 0 [1..5]`
 - Very rarely is the non-strict left fold the right one
 
 > Note that the folds are available in the prelude as `foldr`, `foldl`, and `foldl'` where `foldl` is non-strict and `foldl'` is strict
+
 

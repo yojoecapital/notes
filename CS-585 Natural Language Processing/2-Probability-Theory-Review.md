@@ -17,12 +17,12 @@ $P(A)$ denotes "fraction of possible worlds (given what I know) in which $A$ is 
 
 ### Random Variables
 
-- call $A$ a ==random variable with arity $K$== if A can take on one of $K$ different values in some set $\{v_1,v_2,...,v_k\}$
+- call $A$ a **random variable with arity $K$** if A can take on one of $K$ different values in some set $\{v_1,v_2,...,v_k\}$
 - for example, $\text{Part of Speech}: \{\text{noun, verb, adjective, adverb}\}$ 
 
 ### Atomic Events
 
-- an ==atomic event== is a complete specification of the state of the world which the agent is uncertain about
+- an **atomic event** is a complete specification of the state of the world which the agent is uncertain about
 - i.e. if the world consists of 2 Boolean variables: $\text{Cavity}$ and $\text{Toothache}$ there are 4 atomic events:
   - $\text{Cavity} = \text{false}, \text{Toothache} = \text{false}$
   - $\text{Cavity} = \text{false}, \text{Toothache} = \text{true}$
@@ -47,13 +47,13 @@ $$
 ## Prior (Unconditional) Probability
 
 - i.e. $P(\text{Cavity}=\text{true})=0.1$ and $P(\text{Weather}=\text{sunny})=0.72$ correspond to belief prior to arrival of (new) evidence 
-- a ==probability distribution== gives values for all possible assignments
+- a **probability distribution** gives values for all possible assignments
 
 $$
 P(\text{Weather}) = \textlangle 0.72,0.1,0.08,0.1 \textrangle 
 $$
 
-- a ==joint probability distribution== for a set of random variables gives the probability of every atomic event on those random variables
+- a **joint probability distribution** for a set of random variables gives the probability of every atomic event on those random variables
 
 | $\text{Weather} =$           | sunny | rainy | cloudy | snow |
 | ---------------------------- | ----- | ----- | ------ | ---- |
@@ -64,7 +64,7 @@ $$
 
 ## Independence
 
-- 2 Boolean random variables $A,B$ are ==independent== if and only if $P(A|B)=P(A)$
+- 2 Boolean random variables $A,B$ are **independent** if and only if $P(A|B)=P(A)$
   - if $A,B$ are independent then $P(A\and B) = P(A)P(B)$
 - if $P(A|B)=P(A)$, can we show $P(B|A)=P(B)$?
   - $P(A|B)=P(A) $

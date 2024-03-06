@@ -362,3 +362,4 @@ Silhouette Index: combines separateness and cohesiveness
 
 * compares the average distance value between instances in the same cluster and the average distance value between instances in different clusters
 
+

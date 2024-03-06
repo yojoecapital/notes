@@ -13,7 +13,7 @@
 
 ### How would you learn a DT?
 
-- naive DT learning algorithm (==NDT==)
+- naive DT learning algorithm (**NDT**)
   1. the node at the $i$^th^ level is the $i$^th^ feature
   2. the leaf is the last feature
 - questions
@@ -57,7 +57,7 @@
   - $X_3$ splits the data into <0Y, 5N> and <5Y, 0N>
   - $X_3>X_2>X_1$
 - a node is pure if it contains instances that belong to same class
-- some *impurity* measures are ==Entropy== & ==Gini Index==
+- some *impurity* measures are **Entropy** & **Gini Index**
 
 $$
 \text{Entropy} = -p\log_2 p-(1-p)\log_2(1-p)\\\\
@@ -68,7 +68,7 @@ $$
 
 ### Locally Optimal Feature 
 
-- a feature $X_i$ is ==locally optimal== if the *impurity* is
+- a feature $X_i$ is **locally optimal** if the *impurity* is
   - **smallest after** we split using $X_i$
 
 #### Locally Optimal Feature Example
@@ -141,7 +141,7 @@ $$
 
 #### Gain Ratio
 
-- the solution to the above is to use ==gain ratio== instead of IG
+- the solution to the above is to use **gain ratio** instead of IG
 - Gain Ration = IG / Entropy of split proportions
 
 $$
@@ -235,4 +235,5 @@ $$
   - instead of increasing model complexity, make weak learners more relevant 
   - consider independent models as an expert
   - each individual can have high bias, but team of experts can be objective
+
 

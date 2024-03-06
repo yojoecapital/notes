@@ -23,7 +23,7 @@
 
 - this was also referenced in [Lexical representations for NLP](5-Lexical-representations-for-NLP.md#Wordnet & Synsets )
 - [Wordnet](https://wordnet.princeton.edu/) is a manually-compiled machine-readable dictionary for English
-- it can be used programmatically to lookup word ==synsets== (senses related to a set of words)
+- it can be used programmatically to lookup word **synsets** (senses related to a set of words)
 
 <img src="images/image-20231003134503649.png" alt="image-20231003134503649" style="zoom:50%;" />
 
@@ -37,12 +37,12 @@
   - learn from pre-tagged corpus
 - unsupervised learning
   - automatically cluster word occurrences into different senses
-  - ==clustering== partitioning of datapoints into related groups
+  - **clustering** partitioning of datapoints into related groups
 
 ##  WSD Evaluation
 
 - train & test on pre-tagged texts is difficult to obtain
-- ==pseudoword== or artificial data: *merge* 2 words to form an *ambiguous* word with two *senses* 
+- **pseudoword** or artificial data: *merge* 2 words to form an *ambiguous* word with two *senses* 
 - example: replace all occurrence of "door" & "banana" with "*doorbanana*" and see if the system figures out which is which
   - "the jasmine, almond, *doorbanana*, cork and coco-nut palm are among the trees"
 
@@ -66,12 +66,12 @@
 
 ### Inter-Rater Reliability (Agreement)
 
-- ==inter-rate reliability== measures how often humans agree on annotations
+- **inter-rate reliability** measures how often humans agree on annotations
   - if they don't agree, then the task is ill-defined
-- ==agreement probability== $P(\text{agree}) = $
+- **agreement probability** $P(\text{agree}) = $
   - $\text{number of times raters agree} / \text{number of ratings}$
   - but if 90% of things are annotated all the same then agreement could just be high by change
-- ==Cohen's Kappa==
+- **Cohen's Kappa**
 
 $$
 \kappa = \frac{P_\text{agree} - P_\text{chance}}{1 - P_\text{chance}}
@@ -121,7 +121,7 @@ $$
 ### Algorithm (Lesk 1986)
 
 > - define $D_i(w)$ as a bag of words in the $i$^th^ definition for $w$
-> - define $E(w)$ as $U_iD_i(w)$ <span style="color:red">?</span>
+> - define $E(w)$ as $U_iD_i(w)$ 
 > - for all sense $s_k$ of $w$ do
 >
 > $$

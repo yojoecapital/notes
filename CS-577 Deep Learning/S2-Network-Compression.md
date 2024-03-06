@@ -39,7 +39,7 @@
 
 - how about just train smaller network?
 - it is widely known that smaller network is more difficult to learn
-- ==lottery ticket hypothesis== is about finding a small, essential subset of connections in a neural network that, when properly trained, can achieve high performance
+- **lottery ticket hypothesis** is about finding a small, essential subset of connections in a neural network that, when properly trained, can achieve high performance
 
 ---
 
@@ -87,7 +87,7 @@
 
 ### Motivations
 
-- ==Lipschitz constant== of a function $||f||_\text{Lip}$ is the maximum norm of its gradient in the domain set which reflects Lipschitz continuity of the function 
+- **Lipschitz constant** of a function $||f||_\text{Lip}$ is the maximum norm of its gradient in the domain set which reflects Lipschitz continuity of the function 
 
 $$
 \forall{x,y\in \mathbb R^n}, ||f(x)-f(y)||_2 \le ||f||_\text{Lip} \cdot ||x-y||_2

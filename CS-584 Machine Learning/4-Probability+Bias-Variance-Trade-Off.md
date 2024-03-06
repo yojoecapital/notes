@@ -6,11 +6,8 @@
   - $v_1 \times v_2 \times ... \times v_n$
   - assuming $v = 2$ for *True* and *False*, then we have $2^n$ (exponential)
 - given a sample dataset and a hypothesis $h$, calculate the mean, variance, and 95% confidence interval for the error rate of $h$
-  - <span style="color:red">???</span>
 - given $P(\text{Symptoms}|\text{Diseases}),P(\text{Diseases}), P(\text{Symptoms})$ calculate $P(\text{Diseases}|\text{Symptoms})$
-  - <span style="color:red">???</span>
 - given a probability distribution $p_1,p_2,...,p_k$ calculate its entropy
-  - <span style="color:red">???</span>
 
 ## Random Variables
 
@@ -20,7 +17,7 @@
   - Binary (*True*, *False*)
   - Categorical
   - Real-valued
-- ==Possible World== an assignment to all variables of interest
+- **Possible World** an assignment to all variables of interest
 
 ### Notation
 
@@ -34,7 +31,7 @@
 
 ## Probability Model
 
-- a ==Probability Model== associates a probability $P(w)$ with each possible world $w$
+- a **Probability Model** associates a probability $P(w)$ with each possible world $w$
   - sums to 1 over all possible worlds
 - an event is the set of possible worlds where a given predicate is true
   - for example, rolling 2 dice
@@ -118,7 +115,7 @@ $$
 
 ## Marginal Independence
 
-- an event $\alpha$ is ==independent== of event $\beta$ ($\alpha \perp \beta$) if
+- an event $\alpha$ is **independent** of event $\beta$ ($\alpha \perp \beta$) if
   - $P(\alpha|\beta) = P(\alpha)$ or $P(\beta)=0$
 - $\alpha \perp \beta$ if and only if $P(\alpha,\beta) = P(\alpha)P(\beta)$? <span style="color:red">can you prove this?</span>
 - $\alpha \perp \beta$ implies $\beta \perp \beta$ <span style="color:red">can you prove this?</span>
@@ -189,7 +186,6 @@ $$
 
 - consider $P(Y|X=x)$ where $Y$ is *continuous* but $X$ is *discrete*
 - you will use separate probability density functions for each value of $x \in \bold X$
-- <span style="color:red">not sure about this one 1:01:57 @8/31</span>
 
 ## Expectation
 
@@ -273,10 +269,10 @@ $$
 
 ## Bias vs Variance
 
-- ==High Bias==
+- **High Bias**
   - more assumptions
   - simpler models
-- ==High Variance==
+- **High Variance**
   - fewer assumptions
   - more complex models
   - overfit on small data
