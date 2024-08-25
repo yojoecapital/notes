@@ -89,6 +89,10 @@
 
 - remove an empty directory
 
+### `stat [arg]`
+
+- get time stamps and information for a file
+
 ## Displaying Content
 
 ### `cat [arg]`
@@ -140,8 +144,74 @@
 
 ### `id`
 
-- gives you all your user account information
+- gives you all your user information
+
+### `whoami`
+
+- gives your user name
 
 ## Permissions
 
-Refer to [long list](#Reading long lists `-l`) for more details.
+### `chmod`
+
+- changes the mode of a file
+- `chmod +x [arg]` will make file `[arg]` and executable
+- `chmod 700 [arg]` will make the permission `rwx --- ---` for file `[arg]`
+  - where the first 3 bits  `rwx` are set as `111` or 7
+- `chmod 644 [arg]` will make the permission `rw- r-- r--` for file `[arg]`
+  - `rw-` are set as `110` or 6
+  - `r--` are set as `100` or 4
+- `chmod 755 [arg]` will make the permission `rwx r-x r-x` for file `[arg]`
+  - `rwx` are set as `111` or 7
+  - `r-x` are set as `101` or 5
+
+### Directory Permissions
+
+- using `755` is useful for directories as you need `x` permission to be able to `ls` the directory
+
+## Kill
+
+- use `^C` or `Ctrl + C` to kill a command
+- for example use `^C` on `watch free -h`
+  - where `watch` executes a command every 2 seconds
+  - `free -h` shows the used and free memory in the system (human readable)
+
+### `killall [arg]`
+
+- kills the process named `[arg]` (given that you started that process)
+- for example, `killall google-chrome`
+
+### Finding processes
+
+- `ps`
+
+## Get out
+
+- `exit`
+- `^D`
+  - logs you out
+  - you probably should just use `exit`
+
+## Useful things for terminal emulators
+
+- `^L`
+  - redraws screen 
+  - like `clear`
+- `^+`
+  - hold shift
+  - makes the text bigger
+- `^-`
+  - don't hold shift
+  - makes the text smaller
+
+## String stuff
+
+- `sort`
+  - sort lines alphabetically
+- `uniq`
+  - remove duplicate lines
+
+## Sources
+
+- [Beginner's Guide to the Bash Terminal](https://www.youtube.com/watch?v=oxuRxtrO2Ag)
+- [100+ Linux Things you Need to Know](https://www.youtube.com/watch?v=LKCVKw9CzFo)
