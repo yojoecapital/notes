@@ -134,3 +134,37 @@ The wider the pipe, the more water can flow.
 - for example, it took 10 ms to download an image but the user had to wait 100 ms before getting the first byte of data
 - websites run slower for some user because of the user's location
 
+-------
+
+## [Google Cloud regions and zones](https://www.youtube.com/watch?v=gqWSCoC8dxQ)
+
+- Google Cloud's infrastructure is based in 5 geographic locations:
+    1. North America
+    2. South America
+    3. Europe
+    4. Asia
+    5. Australia
+- application location affects availability, durability, and latency
+- each **geographic location** is divided into
+    - **regions** which are divided into
+    - **zones**
+- for example, the region `europe-west2` (i.e. London) is divided into 3 different zones:
+    1. `europe-west2-a`
+    2. `europe-west2-b`
+    3. `europe-west2-c`
+- zones are where Google Cloud's resources deployed 
+    - an application can run on multiple zones to ensure **resource redundancy**
+    - that means if one zone goes out, the application can still run
+- you can also run resources in different regions a.k.a. **multi-region**
+    - for example, Cloud Storage can be stored in the Europe multi-region
+    - meaning it's stored redundantly in at least 2 geographic locations
+
+------
+
+## [Google’s edge network](https://www.youtube.com/watch?v=yBxjTyMKWCg)
+
+- a recommended best practice is for organizations to keep their traffic on Google's private network for most of its journey
+- Google uses edge networks to ensure responses are delivered with the lowest possible latency 
+- a **network's edge** is the place where a device or organization's network connects to the internet
+  - i.e. a place's entry point to the network
+
