@@ -98,3 +98,42 @@
 - have legacy applications and want to reduct cost of operations
 - want to only pay for resources being used
 - want to offload time used to setup environments
+
+-----
+
+## [SaaS (Software as a service)](https://www.youtube.com/watch?v=BTqNnlvkK1I)
+
+- a computing model that offers an entire application offered by a cloud provider through a web browser
+- abstracts technology completely from a consumer
+- no download or installation is required
+
+### Google Cloud examples
+
+- Google Workspace which includes Gmail, Drive, Meet, etc...
+
+### Benefits
+
+- low maintenance 
+  - eliminates need for IT to download & install products
+  - vendors manage all potential technical issues
+  - helps streamline maintenance and support 
+- cost effective
+  - fixed monthly or annual account fee
+  - predictable costs and per-user budgeting
+- flexible
+  - everything is available from the internet
+
+### Good for organizations that
+
+- want to use standard software solutions with minimal customization
+- don't want to invest in maintenance and infrastructure
+- need IT teams to focus on strategic projects
+- needs to access apps from various devices & locations
+
+-----
+
+## [Choosing a cloud computing model](https://www.youtube.com/watch?v=DFd0ulad7tY)
+
+![image-20240831150329416](/home/yojoe/repos/notes/Digital Transformation with Google Cloud/images/3 Cloud Computing Models and Shared Responsibility/image-20240831150329416.png)
+
+-  most organizations will use a combinations of all 3
