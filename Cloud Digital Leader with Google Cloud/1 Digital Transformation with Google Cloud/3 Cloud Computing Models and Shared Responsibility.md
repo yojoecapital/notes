@@ -5,7 +5,7 @@
 - different cloud computing models offered as a service by providers
 - "as a service" refers to how IT resources are consumed
 
-![image-20240829160258639](./images/3 Cloud Computing Models and Shared Responsibility/image-20240829160258639.png)
+![image-20240829160258639](./images/image-20240829160258639.png)
 
 - On-prem is like owning a car
   - you're responsible for usage and maintenance
@@ -134,7 +134,7 @@
 
 ## [Choosing a cloud computing model](https://www.youtube.com/watch?v=DFd0ulad7tY)
 
-![image-20240831150329416](./images/3 Cloud Computing Models and Shared Responsibility/image-20240831150329416.png)
+![image-20240831150329416](./images/image-20240831150329416.png)
 
 -  most organizations will use a combinations of all 3
 
@@ -158,7 +158,7 @@
 | networks           | access policies |
 | physical security  | user data       |
 
-![image-20240908143107596](./images/3 Cloud Computing Models and Shared Responsibility/image-20240908143107596.png)
+![image-20240908143107596](./images/image-20240908143107596.png)
 
 - where the orange is Google's responsibility and the blue is the customer's
 - customers **are always** responsible for the security of their data

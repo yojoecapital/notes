@@ -167,7 +167,7 @@
       - often requires complex queries 
       - i.e. analyzing sales history to see trends
 
-![image-20240908160953243](./images/3 Google Cloud Data Management Solutions/image-20240908160953243.png)
+![image-20240908160953243](./images/image-20240908160953243.png)
 
 ----
 
