@@ -203,7 +203,7 @@ $$
 
 <img src="images/image-20231003171952081.png" alt="image-20231003171952081" style="zoom:50%;" />
 
-- there can statistical relationships in data that we prefer *not* to leverage (especially if you're a liberal 😜) 
+- there can be statistical relationships in data that we prefer *not* to leverage
 
 <img src="images/image-20231003172210077.png" alt="image-20231003172210077" style="zoom:50%;" />
 
@@ -214,5 +214,4 @@ $$
 - hand-annotation (supervision) is generally not required
 - *deeper* language features related to meaning, rather than specific words
 - in combination with sub-word tokenization, generate encodings of OOV words
-
 
