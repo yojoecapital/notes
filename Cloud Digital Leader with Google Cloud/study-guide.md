@@ -1,0 +1,83 @@
+# Study Guide
+
+- **digital transformation**: paradigm shift; when an organization uses new digital technologies to create or modify business processes to meet the needs of changing business and marketing dynamics'
+- **cloud**: metaphor for the network of data centers that store and analyze data through internet
+- **on-prem**: hosted on site; runs in a locally environment
+- **private cloud**: cloud resource dedicated to a single organization; accessed through the internet
+  - used when already made infrastructure investments 
+  - or regulatory reasons
+- **public cloud**: computing services and infrastructure are provided with 3rd parties like Google Cloud
+- **hybrid cloud**: combination of different environments (like on-prem & public cloud)
+- **multi cloud**: multiple public cloud environments
+- **open standard**: software with particular specifications
+  - stops vendor lock-in
+  - example) ML, HTTP
+- **open source**: source code is public, free to use & modify
+  - example) Google was behind Kubernetes & TensorFlow
+- **total cost of ownership (TCO)**: for on-prem, TCO is associated with the cost of static resources throughout their lifetime
+  - the cost of on-prem is dominated by the initial cost of hardware and software
+  - but cloud computing is a payed-per-use model
+- **CapEx**: *upfront* business expenses put toward fixed assets
+- **OpEx**: *recurring* costs for more immediate benefit
+-  **IP address**: identify a network or the location of a particular device on a network
+- **domain name**: easy to remember name that maps to an IP address
+- **domain name system (DNS)**: DNS server stores a database of domain names mapped to IP addresses that can be used by computers to communicate with each other
+- **bandwidth**: how much data a network can transfer over time; i.e. *width of a pipe*
+- **latency**: time it takes for data to travel from one point to another; i.e. *twists and turns in pipe*
+- **geographic location** is divided into
+  - **regions** which are divided into
+  - **zones**; where Google Cloud's resources deployed 
+- **network's edge**: where a device or network connects to the internet
+- **infrastructure as a service (IaaS)**: offers on-demaind availability of almost infinitely scalable resources
+  - such as compute, networking, storage, databases
+  - lease resources and only pay for what you use
+  - main reasons organizations use IaaS to shift from CapEx to OpEx
+  - example) Compute Engine for VMs, Cloud Storage
+  - why) highly flexible, maintain control over infrastructure
+- **platform as a service (PaaS)**: provides a platform for developers to develop, run, and manage their own applications
+  - can use built-in software components
+  - reduces the amount of code they need to write
+  - example) Cloud Run (server-less platform), BigQuery
+  - why) building software products
+- **software as a service (SaaS)**: a computing model that offers an entire application offered by a cloud provider through a web browser
+  - example) Gmail, Drive, Meet, etc...
+  - why) ready to use
+- **shared responsibility model**: provider is responsible for security *of* cloud; customer is responsible for security *in* cloud
+  - if you configure or store it, you're responsible for securing it.
+- **structured data**: highly organized & well defined
+  - in a table
+- **semi-structured data**: organized in a hierarchy; no formal structure; has tags
+  - example) email, HTML, JSON, XML
+- **unstructured data**: text, images, audio, video
+- **database** is an organized collection of data stored electronically.
+- **relational database**: has clearly defined schema's
+  - relationships
+  - SQL to query
+- **non-relational database (no-SQL)**: non-tabular
+  - flexible data model
+  - ideal for data with changing organization
+- **data warehouse**: enterprise system used for analysis and reporting of structured and semi structured data from multiple sources
+  - example) BigQuery
+- **data lake**: repository designed to ingest, store, explore, process, and analyze any type of volume of *raw data*
+  - unlike the clean data in data warehouses
+- **first-party data**: proprietary customer datasets
+- **second-party data**: first-party data from another organization that can easily be deployed to augment a company's internal datasets
+- **third-party data**: datasets collected and managed by organizations that don't directly interact with an organization's business
+  - often shared on marketplaces like the Google Cloud Marketplace
+- data life cycle
+  1. **data genesis**: initial creation of a unit of data
+  2. **data collection**: data ingested into new system
+  3. **data processing**: data is adjusted such as merging datasets together
+  4. **data storage**: where the data stores and is ready for analysis and action
+     - example) no-SQL, data warehouse, object storage
+  5. **data analysis**: provides direction for business oriented action
+  6. **data activation**: when an analysis is made, it needs to be pushed to the relevant decision makers
+- **data governance**: setting internal standards for how data is managed
+  - granting access permissions; complying with external standards
+- **object storage**: data storage architecture that manages data as “objects”
+  - unstructured data 
+  - uses globally unique identifier in the form of URLs making it easy to integrate with web technologies
+- **Cloud Storage**: allows customers to store any amount of data 
+  - **Standard**: good for hot data or stored for brief time
+  - **Nearline**: ~once a month
+  - **Coldline**:

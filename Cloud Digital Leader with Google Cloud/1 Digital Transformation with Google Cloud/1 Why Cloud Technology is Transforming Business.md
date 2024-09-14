@@ -16,21 +16,21 @@
 
 ## What is the cloud?
 
-- the cloud is a metaphor for the network of datacenters that store and analyze data availabe through the internet
-- business can implement their IT infulstructure on the cloud with
+- the cloud is a metaphor for the network of data centers that store and analyze data available through the internet
+- business can implement their IT infrastructural on the cloud with
   1. on-premises
   2. private cloud
   3. public cloud
   4. hybrid cloud
   5. multi cloud
 
-### 1 On Premisies (on-prem)
+### 1 On Premises (on-prem)
 
 #### Pros
 
 - hosted on-site
 - located and operated in an organization's data center
-- traditonal way of managing IT infrastructure
+- traditional way of managing IT infrastructure
 - doesn't require 3rd party access 
 - owners have physical control
 - no payment for ongoing access
@@ -47,9 +47,9 @@ Business must buy their own servers and infrastructure which needs
 
 ### 2 Private Cloud
 
-- dedicated to a single organizationan
+- dedicated to a single organization
 - a.k.a. *single-tenant* or *corporate cloud*
-- organizations will usually have to do the same mainatance for a private cloud as on-prem
+- organizations will usually have to do the same maintenance for a private cloud as on-prem
 - usually hosted in 
   - 3rd party co-location facility
   - own data center
@@ -62,13 +62,13 @@ Business must buy their own servers and infrastructure which needs
 
 - computing services and infrastructure are provided with 3rd parties like Google Cloud
 - shared with multiple organizations (tenants) over the internet
-- a.k.a.*multi-tenant cloud infrastructure*
+- a.k.a. *multi-tenant cloud infrastructure*
 - each tenants' data is hidden from others
 - usually "cloud" refers to public cloud
 
 #### Pros
 
-- on-demand availabity
+- on-demand availability
 - no need to manage or configure resources
 - pay for what you use
 

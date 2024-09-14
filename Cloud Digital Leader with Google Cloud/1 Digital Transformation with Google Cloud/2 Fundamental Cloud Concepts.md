@@ -84,8 +84,8 @@ However, this means businesses don't need to pay for maintenance and aren't depr
 
 #### Fiber-optic networks
 
-- **fiber-optic cables** contain 1 or more **optical fires** 
-  - which are thin strands made of glass or pastic
+- **fiber-optic cables** contain 1 or more **optical cables** 
+  - which are thin strands made of glass or plastic
   - they transmit data as pulses of light over long distances
 - sub-sea fiber-optic cables carry 99% of network traffic
   - the first sub-sea cable was used to transfer telegrams and took 17 hours
