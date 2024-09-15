@@ -40,14 +40,14 @@
 
 -  one of the early stages in a data pipeline is **ingestion**
   - large amount of streaming data are received
-- data might not always come from a single structured database
+-  data might not always come from a single structured database
   - could be from a thousand different events happening asynchronously 
-- **Pub/Sub** is a distributed messaging service that can receive messages from various streams
+-  **Pub/Sub** is a distributed messaging service that can receive messages from various streams
   - short for publisher/subscriber
-- **Dataflow** creates a pipeline to process both streaming data and batch data
+-  **Dataflow** creates a pipeline to process both streaming data and batch data
   - process refers to steps to extract, transform, and load data or **ETL**
   - a popular solution for pipeline design is **Apache Beam**
     - open source unified programming model to define and execute data processing pipelines, including ETL, batch, and streaming processing
   - Dataflow is fully managed and server-less
     - server-less means software developers can build and provision applications without having to manage back-end infrastructure
-    - 
+
