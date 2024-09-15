@@ -19,7 +19,7 @@
   - but cloud computing is a payed-per-use model
 - **CapEx**: *upfront* business expenses put toward fixed assets
 - **OpEx**: *recurring* costs for more immediate benefit
--  **IP address**: identify a network or the location of a particular device on a network
+- **IP address**: identify a network or the location of a particular device on a network
 - **domain name**: easy to remember name that maps to an IP address
 - **domain name system (DNS)**: DNS server stores a database of domain names mapped to IP addresses that can be used by computers to communicate with each other
 - **bandwidth**: how much data a network can transfer over time; i.e. *width of a pipe*
@@ -80,4 +80,18 @@
 - **Cloud Storage**: allows customers to store any amount of data 
   - **Standard**: good for hot data or stored for brief time
   - **Nearline**: ~once a month
-  - **Coldline**:
+  - **Coldline**: ~every 90 days
+  - **Archive**: ~less than once a year
+  - **Autoclass**: 
+    - a features that moves data not accessed to colder storage classes to reduce storage cost
+    - moves data that is accessed to standard storage to optimize future access
+- **Cloud SQL**: fully managed relation databases including MySQL, PostgreSQL, and SQL Server
+  - **database migration service (DMS)**: makes it easy to migrate production databases to Cloud SQL with minimum down time
+- **Cloud Spanner**: relational database service that is *mission critical* & *scales horizontal*
+- use *Spanner* if
+  - have outgrown any relational database
+  - are sharding your databases (storing a large database across multiple machines) for throughput high performance
+  - need transactional consistency
+- use *Cloud SQL* if
+  - don't need horizontal scalng
+  - don't need globally available system
