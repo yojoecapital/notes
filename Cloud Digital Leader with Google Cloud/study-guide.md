@@ -1,8 +1,10 @@
 # Study Guide
 
+[toc]
+
 ## 1 Digital Transformation
 
-- **digital transformation**: paradigm shift; when an organization uses new digital technologies to create or modify business processes to meet the needs of changing business and marketing dynamics'
+- **digital transformation**: paradigm shift; when an organization uses new digital technologies to create or modify business processes to meet the needs of changing business and marketing dynamics
 - **cloud**: metaphor for the network of data centers that store and analyze data through internet
 - **on-prem**: hosted on site; runs in a locally environment
 - **private cloud**: cloud resource dedicated to a single organization; accessed through the internet
@@ -13,7 +15,7 @@
 - **multi cloud**: multiple public cloud environments
 - **open standard**: software with particular specifications
   - stops vendor lock-in
-  - example) ML, HTTP
+  - example) XML, HTTP
 - **open source**: source code is public, free to use & modify
   - example) Google was behind Kubernetes & TensorFlow
 - **total cost of ownership (TCO)**: for on-prem, TCO is associated with the cost of static resources throughout their lifetime
@@ -21,7 +23,7 @@
   - but cloud computing is a payed-per-use model
 - **CapEx**: *upfront* business expenses put toward fixed assets
 - **OpEx**: *recurring* costs for more immediate benefit
-- **IP address**: identify a network or the location of a particular device on a network
+- **IP address (internet protocol)**: identify a network or the location of a particular device on a network
 - **domain name**: easy to remember name that maps to an IP address
 - **domain name system (DNS)**: DNS server stores a database of domain names mapped to IP addresses that can be used by computers to communicate with each other
 - **bandwidth**: how much data a network can transfer over time; i.e. *width of a pipe*
@@ -35,7 +37,7 @@
   - lease resources and only pay for what you use
   - main reasons organizations use IaaS to shift from CapEx to OpEx
   - example) Compute Engine for VMs, Cloud Storage
-  - why) highly flexible, maintain control over infrastructure
+  - why) highly flexible, you maintain control over infrastructure
 - **platform as a service (PaaS)**: provides a platform for developers to develop, run, and manage their own applications
   - can use built-in software components
   - reduces the amount of code they need to write
@@ -49,25 +51,24 @@
 
 ## 2 Data Transformation
 
-- **structured data**: highly organized & well defined
-  - in a table
+- **structured data**: highly organized & well defined; in a table
 - **semi-structured data**: organized in a hierarchy; no formal structure; has tags
   - example) email, HTML, JSON, XML
 - **unstructured data**: text, images, audio, video
-- **database** is an organized collection of data stored electronically.
+- **database** is an organized collection of data stored electronically
 - **relational database**: has clearly defined schema's
   - relationships
   - SQL to query
 - **non-relational database (no-SQL)**: non-tabular
   - flexible data model
   - ideal for data with changing organization
-- **data warehouse**: enterprise system used for analysis and reporting of structured and semi structured data from multiple sources
+- **data warehouse**: enterprise system used for analysis and reporting of structured and semi-structured data from multiple sources
   - example) BigQuery
 - **data lake**: repository designed to ingest, store, explore, process, and analyze any type of volume of *raw data*
   - unlike the clean data in data warehouses
 - **first-party data**: proprietary customer datasets
 - **second-party data**: first-party data from another organization that can easily be deployed to augment a company's internal datasets
-- **third-party data**: datasets collected and managed by organizations that don't directly interact with an organization's business
+- **third-party data**: datasets collected and managed by organizations that don't directly interact with another organization's business
   - often shared on marketplaces like the Google Cloud Marketplace
 - data life cycle
   1. **data genesis**: initial creation of a unit of data
@@ -81,7 +82,6 @@
   - granting access permissions; complying with external standards
 - *for unstructured data*
   - **object storage**: data storage architecture that manages data as “objects”
-    - unstructured data 
     - uses globally unique identifier in the form of URLs making it easy to integrate with web technologies
   - **Cloud Storage**: allows customers to store any amount of data 
     - **Standard**: good for hot data or stored for brief time
@@ -102,7 +102,7 @@
     - need transactional consistency
   - use *Cloud SQL* if
     - don't need horizontal scalng
-    - don't need globally available system
+    - don't need a globally available system
   - **BigQuery**: fully managed data warehouse; for storage & analytics (ML, geospatial analysis, BI)
     - encrypted at rest
     - seamless integration with partner ecosystem & mutli-cloud
@@ -189,4 +189,81 @@
   - **Discovery AI** for retail uses ML to select the optimal ordering of products on a retailer's e-commerce site
   - **Cloud Talent Solution** uses AI with job search and talent acquisition capabilities
 
-  
+
+## 4 Modernize
+
+- **workload**: a specific application, service, or capability that can be run in the Cloud or on premises
+  - **retiring workload**: removing a workload from a platform
+  - **retaining workload**: workload is intentionally kept; kept on
+    - on-prem
+    - in a hybrid cloud environment
+    - is managed by the organization
+  - **rehosting workload**: migration of a workload to the Cloud without changing anything in the workload's code (lift & shift)
+  - **replatforming workloads**: process of migrating a workload to the Cloud while making some changes to the workloads code; a.k.a. "move and improve"
+  - **refactoring workload**: changing code of a workload
+  - **reimagined**: organization reconsiders how they use cloud computing 
+- **virtual machines (VMs)**: form of resource optimization that lets multiple systems run on the same hardware
+- **Compute Engine**: IaaS solution to let users run VMs
+  - through Google Cloud console or CLI
+  - bills by the second
+  - 1 minute minimum
+  - *sustained-use discounts*
+  - if a workload doesn't need a user to wait for it to finish use 
+    - *preemptable* or *spot VMs* to cut costs by 90%
+    - they are VMs that can be terminated if resources are needed elsewhere
+    - spot VMs have more features than preemptable such as
+      - no maximum runtime vs 24 hours
+- **containers** provide isolated environments to run software services and optimize resources from one piece of hardware
+  - more efficient than VMs as
+    - VMs virtualize down to the hardware layers
+    - containers only virtualize software layers above the OS level
+  - containers start faster & use fraction of the memory
+  - a container is packaged with your application and all of its dependencies, so it has everything it needs to run
+  - well suited for a **microservice-based architecture**
+    - this architecture is made up of smaller individual services that run containerized applications, that communicate with each other through APIs or other lightweight communication methods
+- **Kubernetes**, originally developed by Google, is an open-source platform for managing containerized workloads and services
+- **Google Kubernetes Engine** (GKE) is a Google hosted, managed Kubernetes service in the Cloud
+  - GKE environment consists of multiple machines (Compute Engine instances) grouped to form a cluster
+  - GKE makes it easy to deploy applications by provided an API and a web console
+  - **GKE Autopilot**: mode that enables full management of an entire cluster's infrastructure and provides per-pod billing (i.e. eliminate need to configure and monitor clusters)
+- **Google Cloud Run** is a fully managed serverless platform to deploy and run containerized applications without needing to worry about the underlying infrastructure
+  - best for simple lightweight applications like web applications 
+- **serverless**: doesn't mean no server; resources like compute power are automatically provisioned in the background as needed
+  - won't pay for compute power unless they're running a query or application
+- **function as a service**: you write the code that responds to those events and the Cloud does the rest
+  - like response to file uploads to Cloud storage, or changes to database records
+- *Google's serverless products*
+  - Cloud Run
+  - **Cloud function**
+    - platform for hosting simple single purpose functions that are attached to events emitted from your Cloud infrastructure and services
+    - for example, sending a notification to a mobile device when a new order is placed on a website
+  - **App engine**
+    - service to build an deploy web applications
+- *benefits of modern cloud applications include*
+  - modern cloud applications are typically built as a collection of **microservices**
+    - **microservices** are independently deployable, scalable and maintainable components that can be used to build a wide range of applications
+  - modern applications are typically deployed to the cloud and can use **managed** or **partially managed** services
+    - **managed services** take care of the day-to-day management of cloud-based infrastructure, such as patching, upgrades, and monitoring
+    - **partially managed services** offer a hybrid approach, where businesses manage some aspects of their cloud-based applications and cloud provider manages others
+  - modern cloud applications use a pay-as-you-go model making it cost effective if configured efficiently
+  - **load balancing** is the process of distributing network traffic evenly across servers that support an application
+  - **automatic failover** is the process that allows a cloud application to automatically switch to a backup server if a failure occurs
+- *rehosting migrating or "lift and shift"*
+  - **Google Cloud VMware Engine**
+    - helps migrate existing VMware workloads to the cloud without having to rearchitect the applications
+    - organizations can maintain their existing VMware environments while getting benefits of Google Cloud (scalability, security, reliability, etc...) 
+    - also access a range of Google Cloud services such as BigQuery, AI/ML
+  - **Google Bare Metal Solution**
+    - fully managed cloud infrastructure solution that lets organizations run their Oracle workloads on dedicated, bare metal servers in the cloud
+- **Apigee** is an API management platform 
+  - helps organizations secure their APIs such as with
+    - authentication, authorization, encryption
+- **GKE Enterprise** is a production ready platform for running Kubernetes applications across multiple cloud environments
+
+## 5 Trust and Security with Google Cloud
+
+- go through notes
+
+## 6 Financial Governance and Managing Cloud Costs
+
+- go through notes

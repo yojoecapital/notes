@@ -4,9 +4,9 @@
 
 - the traditional software development approach (a.k.a. **monolithic applications**)
   - required all the components to be developed and deployed as a single, tightly coupled unit, typically using a single programming language
-- the benefit of modern cloud applications include 
+- the benefits of modern cloud applications include 
   - *architecture*
-    - modern cloud applications are typically build as a collection of **microservices**
+    - modern cloud applications are typically built as a collection of **microservices**
     - **microservices** are independently deployable, scalable and maintainable components that can be used to build a wide range of applications
     - features can be released as they're completed without waiting for the rest of the application to be complete
   - *deployment*
@@ -54,7 +54,7 @@
   - Google Search
   - Google Maps
   - Google Translate
-- the benefits of an organization exposing APIs include\
+- the benefits of an organization exposing APIs include
   - create new products and services (such as with 3rd party apps)
   - generate new revenue if the organization charges to use the API
   - create partnerships

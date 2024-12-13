@@ -81,4 +81,3 @@
   - for example, sending a notification to a mobile device when a new order is placed on a website
 - **App engine**
   - service to build an deploy web applications
-  - 

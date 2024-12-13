@@ -98,7 +98,7 @@
   - need transactional consistency
 - use Cloud SQL if
   - don't need horizontal scalng
-  - don't need globally available system
+  - don't need a globally available system
 
 ### BigQuery
 
